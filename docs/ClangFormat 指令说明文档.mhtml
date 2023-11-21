@@ -1,0 +1,2323 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://clang.llvm.org/docs/ClangFormat.html
+Subject: =?utf-8?Q?ClangFormat=20=E2=80=94=20Clang=2018.0.0git=20=E6=96=87=E6=A1=A3?=
+Date: Tue, 21 Nov 2023 17:29:45 +0800
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----"
+
+
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/html
+Content-ID: <frame-3C539C85BB646D5E446616A66E53DDE3@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://clang.llvm.org/docs/ClangFormat.html
+
+<!DOCTYPE html><html lang=3D"zh-CN" class=3D"translated-ltr"><head><meta ht=
+tp-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8">
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1.0"><meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-sc=
+ale=3D1">
+
+    <title>ClangFormat =E2=80=94 Clang 18.0.0git =E6=96=87=E6=A1=A3</title>
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://clang.llvm.o=
+rg/docs/_static/pygments.css?v=3D649a27d8">
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://clang.llvm.o=
+rg/docs/_static/haiku.css?v=3Dd31ea6cb">
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://clang.llvm.o=
+rg/docs/_static/graphviz.css?v=3Deafc0fe6">
+   =20
+   =20
+   =20
+    <link rel=3D"index" title=3D"=E6=8C=87=E6=95=B0" href=3D"https://clang.=
+llvm.org/docs/genindex.html">
+    <link rel=3D"search" title=3D"=E6=90=9C=E7=B4=A2" href=3D"https://clang=
+.llvm.org/docs/search.html">
+    <link rel=3D"next" title=3D"Clang =E6=A0=BC=E5=BC=8F=E6=A0=B7=E5=BC=8F=
+=E9=80=89=E9=A1=B9" href=3D"https://clang.llvm.org/docs/ClangFormatStyleOpt=
+ions.html">
+    <link rel=3D"prev" title=3D"=E9=93=BF=E9=94=B5=E6=A3=80=E6=9F=A5" href=
+=3D"https://clang.llvm.org/docs/ClangCheck.html">=20
+  <link type=3D"text/css" rel=3D"stylesheet" charset=3D"UTF-8" href=3D"http=
+s://www.gstatic.com/_/translate_http/_/ss/k=3Dtranslate_http.tr.qhDXWpKopYk=
+.L.W.O/am=3DCAM/d=3D0/rs=3DAN8SPfqeKn8wA30q4viup18yaci8udUjKQ/m=3Del_main_c=
+ss"></head><body>
+      <div class=3D"header" role=3D"banner"><h1 class=3D"heading"><a href=
+=3D"https://clang.llvm.org/docs/index.html">
+          <span><font style=3D"vertical-align: inherit;"><font style=3D"ver=
+tical-align: inherit;">Clang 18.0.0git =E6=96=87=E6=A1=A3</font></font></sp=
+an></a></h1>
+        <h2 class=3D"heading"><span><font style=3D"vertical-align: inherit;=
+"><font style=3D"vertical-align: inherit;">Clang=E6=A0=BC=E5=BC=8F</font></=
+font></span></h2>
+      </div>
+      <div class=3D"topnav" role=3D"navigation" aria-label=3D"=E9=A1=B6=E9=
+=83=A8=E5=AF=BC=E8=88=AA">
+     =20
+        <p><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;">
+        =C2=AB&nbsp;&nbsp; </font></font><a href=3D"https://clang.llvm.org/=
+docs/ClangCheck.html"><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">ClangCheck</font></font></a><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">=20
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+        </font></font><a class=3D"uplink" href=3D"https://clang.llvm.org/do=
+cs/index.html"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">=E5=86=85=E5=AE=B9</font></font></a><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+         </font></font><a href=3D"https://clang.llvm.org/docs/ClangFormatSt=
+yleOptions.html"><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">Clang =E6=A0=BC=E5=BC=8F=E6=A0=B7=E5=BC=8F=E9=80=89=
+=E9=A1=B9</font></font></a><font style=3D"vertical-align: inherit;"><font s=
+tyle=3D"vertical-align: inherit;">&nbsp;&nbsp;=C2=BB
+        </font></font></p>
+
+      </div>
+      <div class=3D"content" role=3D"main">
+       =20
+       =20
+  <section id=3D"clangformat">
+<h1><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Clang =E6=A0=BC=E5=BC=8F</font></font><a class=3D"headerlink" hr=
+ef=3D"https://clang.llvm.org/docs/ClangFormat.html#clangformat" title=3D"=
+=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=A5"><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">=C2=B6</font></font></a></h1>
+<p><cite><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">ClangFormat</font></font></cite><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">=E6=8F=8F=E8=BF=B0=
+=E4=BA=86=E4=B8=80=E7=BB=84=E6=9E=84=E5=BB=BA=E5=9C=A8
+</font></font><a class=3D"reference internal" href=3D"https://clang.llvm.or=
+g/docs/LibFormat.html"><span class=3D"doc"><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">LibFormat</font></font></=
+span></a><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">=E4=B9=8B=E4=B8=8A=E7=9A=84=E5=B7=A5=E5=85=B7=E3=80=82</fon=
+t><font style=3D"vertical-align: inherit;">=E5=AE=83=E5=8F=AF=E4=BB=A5=E9=
+=80=9A=E8=BF=87=E5=A4=9A=E7=A7=8D=E6=96=B9=E5=BC=8F=E6=94=AF=E6=8C=81=E6=82=
+=A8=E7=9A=84=E5=B7=A5=E4=BD=9C=E6=B5=81=E7=A8=8B=EF=BC=8C=E5=8C=85=E6=8B=AC=
+=E7=8B=AC=E7=AB=8B=E5=B7=A5=E5=85=B7=E5=92=8C=E7=BC=96=E8=BE=91=E5=99=A8=E9=
+=9B=86=E6=88=90=E3=80=82</font></font></p>
+<section id=3D"standalone-tool">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">=E7=8B=AC=E7=AB=8B=E5=B7=A5=E5=85=B7</font></font><a class=3D"he=
+aderlink" href=3D"https://clang.llvm.org/docs/ClangFormat.html#standalone-t=
+ool" title=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=
+=BE=E6=8E=A5"><font style=3D"vertical-align: inherit;"><font style=3D"verti=
+cal-align: inherit;">=C2=B6</font></font></a></h2>
+<p><strong class=3D"program"><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;">clang-format</font></font></strong><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">=E4=BD=8D=E4=BA=8E</font></font><cite><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;">clang/tools/clang-format</f=
+ont></font></cite><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">=E4=B8=AD=EF=BC=8C=E5=8F=AF=E7=94=A8=E4=BA=8E=E6=
+=A0=BC=E5=BC=8F=E5=8C=96 C/C++/Java/JavaScript/JSON/Objective-C/Protobuf/C#=
+ =E4=BB=A3=E7=A0=81=E3=80=82</font></font></p>
+<div class=3D"highlight-console notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"gp">$ </span>clang-format<span class=3D"w"> </s=
+pan>--help
+<span class=3D"go">OVERVIEW: A tool to format C/C++/Java/JavaScript/JSON/Ob=
+jective-C/Protobuf/C# code.</span>
+
+<span class=3D"go">If no arguments are specified, it formats the code from =
+standard input</span>
+<span class=3D"go">and writes the result to the standard output.</span>
+<span class=3D"go">If &lt;file&gt;s are given, it reformats the files. If -=
+i is specified</span>
+<span class=3D"go">together with &lt;file&gt;s, the files are edited in-pla=
+ce. Otherwise, the</span>
+<span class=3D"go">result is written to the standard output.</span>
+
+<span class=3D"go">USAGE: clang-format [options] [@&lt;file&gt;] [&lt;file&=
+gt; ...]</span>
+
+<span class=3D"go">OPTIONS:</span>
+
+<span class=3D"go">Clang-format options:</span>
+
+<span class=3D"go">  --Werror                       - If set, changes forma=
+tting warnings to errors</span>
+<span class=3D"go">  --Wno-error=3D&lt;value&gt;            - If set don't =
+error out on the specified warning type.</span>
+<span class=3D"go">    =3Dunknown                     -   If set, unknown f=
+ormat options are only warned about.</span>
+<span class=3D"go">                                     This can be used to=
+ enable formatting, even if the</span>
+<span class=3D"go">                                     configuration conta=
+ins unknown (newer) options.</span>
+<span class=3D"go">                                     Use with caution, a=
+s this might lead to dramatically</span>
+<span class=3D"go">                                     differing format de=
+pending on an option being</span>
+<span class=3D"go">                                     supported or not.</=
+span>
+<span class=3D"go">  --assume-filename=3D&lt;string&gt;     - Set filename =
+used to determine the language and to find</span>
+<span class=3D"go">                                   .clang-format file.</=
+span>
+<span class=3D"go">                                   Only used when readin=
+g from stdin.</span>
+<span class=3D"go">                                   If this is not passed=
+, the .clang-format file is searched</span>
+<span class=3D"go">                                   relative to the curre=
+nt working directory when reading stdin.</span>
+<span class=3D"go">                                   Unrecognized filename=
+s are treated as C++.</span>
+<span class=3D"go">                                   supported:</span>
+<span class=3D"go">                                     CSharp: .cs</span>
+<span class=3D"go">                                     Java: .java</span>
+<span class=3D"go">                                     JavaScript: .mjs .j=
+s .ts</span>
+<span class=3D"go">                                     Json: .json</span>
+<span class=3D"go">                                     Objective-C: .m .mm=
+</span>
+<span class=3D"go">                                     Proto: .proto .prot=
+odevel</span>
+<span class=3D"go">                                     TableGen: .td</span=
+>
+<span class=3D"go">                                     TextProto: .textpb =
+.pb.txt .textproto .asciipb</span>
+<span class=3D"go">                                     Verilog: .sv .svh .=
+v .vh</span>
+<span class=3D"go">  --cursor=3D&lt;uint&gt;                - The position =
+of the cursor when invoking</span>
+<span class=3D"go">                                   clang-format from an =
+editor integration</span>
+<span class=3D"go">  --dry-run                      - If set, do not actual=
+ly make the formatting changes</span>
+<span class=3D"go">  --dump-config                  - Dump configuration op=
+tions to stdout and exit.</span>
+<span class=3D"go">                                   Can be used with -sty=
+le option.</span>
+<span class=3D"go">  --fallback-style=3D&lt;string&gt;      - The name of t=
+he predefined style used as a</span>
+<span class=3D"go">                                   fallback in case clan=
+g-format is invoked with</span>
+<span class=3D"go">                                   -style=3Dfile, but ca=
+n not find the .clang-format</span>
+<span class=3D"go">                                   file to use. Defaults=
+ to 'LLVM'.</span>
+<span class=3D"go">                                   Use -fallback-style=
+=3Dnone to skip formatting.</span>
+<span class=3D"go">  --ferror-limit=3D&lt;uint&gt;          - Set the maxim=
+um number of clang-format errors to emit</span>
+<span class=3D"go">                                   before stopping (0 =
+=3D no limit).</span>
+<span class=3D"go">                                   Used only with --dry-=
+run or -n</span>
+<span class=3D"go">  --files=3D&lt;filename&gt;             - A file contai=
+ning a list of files to process, one per line.</span>
+<span class=3D"go">  -i                             - Inplace edit &lt;file=
+&gt;s, if specified.</span>
+<span class=3D"go">  --length=3D&lt;uint&gt;                - Format a rang=
+e of this length (in bytes).</span>
+<span class=3D"go">                                   Multiple ranges can b=
+e formatted by specifying</span>
+<span class=3D"go">                                   several -offset and -=
+length pairs.</span>
+<span class=3D"go">                                   When only a single -o=
+ffset is specified without</span>
+<span class=3D"go">                                   -length, clang-format=
+ will format up to the end</span>
+<span class=3D"go">                                   of the file.</span>
+<span class=3D"go">                                   Can only be used with=
+ one input file.</span>
+<span class=3D"go">  --lines=3D&lt;string&gt;               - &lt;start lin=
+e&gt;:&lt;end line&gt; - format a range of</span>
+<span class=3D"go">                                   lines (both 1-based).=
+</span>
+<span class=3D"go">                                   Multiple ranges can b=
+e formatted by specifying</span>
+<span class=3D"go">                                   several -lines argume=
+nts.</span>
+<span class=3D"go">                                   Can't be used with -o=
+ffset and -length.</span>
+<span class=3D"go">                                   Can only be used with=
+ one input file.</span>
+<span class=3D"go">  -n                             - Alias for --dry-run</=
+span>
+<span class=3D"go">  --offset=3D&lt;uint&gt;                - Format a rang=
+e starting at this byte offset.</span>
+<span class=3D"go">                                   Multiple ranges can b=
+e formatted by specifying</span>
+<span class=3D"go">                                   several -offset and -=
+length pairs.</span>
+<span class=3D"go">                                   Can only be used with=
+ one input file.</span>
+<span class=3D"go">  --output-replacements-xml      - Output replacements a=
+s XML.</span>
+<span class=3D"go">  --qualifier-alignment=3D&lt;string&gt; - If set, overr=
+ides the qualifier alignment style</span>
+<span class=3D"go">                                   determined by the Qua=
+lifierAlignment style flag</span>
+<span class=3D"go">  --sort-includes                - If set, overrides the=
+ include sorting behavior</span>
+<span class=3D"go">                                   determined by the Sor=
+tIncludes style flag</span>
+<span class=3D"go">  --style=3D&lt;string&gt;               - Set coding st=
+yle. &lt;string&gt; can be:</span>
+<span class=3D"go">                                   1. A preset: LLVM, GN=
+U, Google, Chromium, Microsoft,</span>
+<span class=3D"go">                                      Mozilla, WebKit.</=
+span>
+<span class=3D"go">                                   2. 'file' to load sty=
+le configuration from a</span>
+<span class=3D"go">                                      .clang-format file=
+ in one of the parent directories</span>
+<span class=3D"go">                                      of the source file=
+ (for stdin, see --assume-filename).</span>
+<span class=3D"go">                                      If no .clang-forma=
+t file is found, falls back to</span>
+<span class=3D"go">                                      --fallback-style.<=
+/span>
+<span class=3D"go">                                      --style=3Dfile is =
+the default.</span>
+<span class=3D"go">                                   3. 'file:&lt;format_f=
+ile_path&gt;' to explicitly specify</span>
+<span class=3D"go">                                      the configuration =
+file.</span>
+<span class=3D"go">                                   4. "{key: value, ...}=
+" to set specific parameters, e.g.:</span>
+<span class=3D"go">                                      --style=3D"{BasedO=
+nStyle: llvm, IndentWidth: 8}"</span>
+<span class=3D"go">  --verbose                      - If set, shows the lis=
+t of processed files</span>
+
+<span class=3D"go">Generic Options:</span>
+
+<span class=3D"go">  --help                         - Display available opt=
+ions (--help-hidden for more)</span>
+<span class=3D"go">  --help-list                    - Display list of avail=
+able options (--help-list-hidden for more)</span>
+<span class=3D"go">  --version                      - Display the version o=
+f this program</span>
+</pre></div>
+</div>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E5=BD=93=E6=89=80=E9=9C=80=E7=9A=84=E4=BB=A3=E7=A0=81=E6=A0=BC=
+=E5=BC=8F=E5=8C=96=E6=A0=B7=E5=BC=8F=E4=B8=8E=E5=8F=AF=E7=94=A8=E9=80=89=E9=
+=A1=B9=E4=B8=8D=E5=90=8C=E6=97=B6=EF=BC=8C=E5=8F=AF=E4=BB=A5=E4=BD=BF=E7=94=
+=A8=E8=AF=A5=E9=80=89=E9=A1=B9=E6=9D=A5=E8=87=AA=E5=AE=9A=E4=B9=89=E6=A0=B7=
+=E5=BC=8F=EF=BC=8C</font><font style=3D"vertical-align: inherit;">=E6=88=96=
+=E8=80=85=E5=B0=86=E6=A0=B7=E5=BC=8F=E9=85=8D=E7=BD=AE=E6=94=BE=E5=9C=A8</f=
+ont><font style=3D"vertical-align: inherit;">
+=E9=A1=B9=E7=9B=AE=E7=9B=AE=E5=BD=95=E4=B8=AD=E7=9A=84</font><font style=3D=
+"vertical-align: inherit;">=E6=88=96=E6=96=87=E4=BB=B6=E4=B8=AD=E5=B9=B6=E4=
+=BD=BF=E7=94=A8</font><font style=3D"vertical-align: inherit;">.</font></fo=
+nt><code class=3D"docutils literal notranslate"><span class=3D"pre">-style=
+=3D"{key:</span> <span class=3D"pre">value,</span> <span class=3D"pre">...}=
+"</span></code><font style=3D"vertical-align: inherit;"></font><code class=
+=3D"docutils literal notranslate"><span class=3D"pre">.clang-format</span><=
+/code><font style=3D"vertical-align: inherit;"></font><code class=3D"docuti=
+ls literal notranslate"><span class=3D"pre">_clang-format</span></code><fon=
+t style=3D"vertical-align: inherit;"></font><code class=3D"docutils literal=
+ notranslate"><span class=3D"pre">clang-format</span> <span class=3D"pre">-=
+style=3Dfile</span></code><font style=3D"vertical-align: inherit;"></font><=
+/p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E5=88=9B=E5=BB=BA=E8=AF=A5</font></font><code class=3D"docutils =
+literal notranslate"><span class=3D"pre">.clang-format</span></code><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+=E6=96=87=E4=BB=B6=E7=9A=84=E7=AE=80=E5=8D=95=E6=96=B9=E6=B3=95=E6=98=AF=EF=
+=BC=9A</font></font></p>
+<div class=3D"highlight-console notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"go">clang-format -style=3Dllvm -dump-config &gt=
+; .clang-format</span>
+</pre></div>
+</div>
+<p><font style=3D"vertical-align: inherit;"></font><a class=3D"reference in=
+ternal" href=3D"https://clang.llvm.org/docs/ClangFormatStyleOptions.html"><=
+span class=3D"doc"><font style=3D"vertical-align: inherit;"><font style=3D"=
+vertical-align: inherit;">Clang-Format =E6=A0=B7=E5=BC=8F=E9=80=89=E9=A1=B9=
+</font></font></span></a><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;">=E4=B8=AD=E6=8F=8F=E8=BF=B0=E4=BA=86=E5=8F=
+=AF=E7=94=A8=E7=9A=84=E6=A0=B7=E5=BC=8F=E9=80=89=E9=A1=B9</font><font style=
+=3D"vertical-align: inherit;">=E3=80=82</font></font></p>
+</section>
+<section id=3D"vim-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Vim =E9=9B=86=E6=88=90</font></font><a class=3D"headerlink" href=
+=3D"https://clang.llvm.org/docs/ClangFormat.html#vim-integration" title=3D"=
+=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=A5"><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">=C2=B6</font></font></a></h2>
+<p><font style=3D"vertical-align: inherit;"></font><strong class=3D"program=
+"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">vim</font></font></strong><font style=3D"vertical-align: inherit;"=
+><font style=3D"vertical-align: inherit;">=E7=9A=84=E9=9B=86=E6=88=90=E5=85=
+=81=E8=AE=B8=E6=82=A8</font><font style=3D"vertical-align: inherit;">=E5=9C=
+=A8=E5=BD=93=E5=89=8D=E7=BC=93=E5=86=B2=E5=8C=BA=E4=B8=8A</font><font style=
+=3D"vertical-align: inherit;">=E8=BF=90=E8=A1=8C
+</font></font><strong class=3D"program"><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;">clang-format=E7=8B=AC=E7=AB=
+=8B=E5=B7=A5=E5=85=B7=EF=BC=8C=E5=8F=AF=E9=80=89=E6=8B=A9=E9=80=89=E6=8B=A9=
+=E8=A6=81=E9=87=8D=E6=96=B0=E6=A0=BC=E5=BC=8F=E5=8C=96=E7=9A=84=E5=8C=BA=E5=
+=9F=9F=E3=80=82</font></font></strong><font style=3D"vertical-align: inheri=
+t;"></font><cite><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">=E9=9B=86=E6=88=90=E9=87=87=E7=94=A8python</font></=
+font></cite><font style=3D"vertical-align: inherit;"><font style=3D"vertica=
+l-align: inherit;">=E6=96=87=E4=BB=B6=E7=9A=84=E5=BD=A2=E5=BC=8F</font><fon=
+t style=3D"vertical-align: inherit;">=EF=BC=8C=E5=8F=AF=E4=BB=A5=E5=9C=A8</=
+font></font><cite><font style=3D"vertical-align: inherit;"><font style=3D"v=
+ertical-align: inherit;">clang/tools/clang-format/clang-format.py</font></f=
+ont></cite><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;">=E4=B8=8B=E6=89=BE=E5=88=B0=E3=80=82</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87=E5=B0=86=E4=BB=A5=E4=B8=8B=
+=E5=86=85=E5=AE=B9=E6=B7=BB=E5=8A=A0=E5=88=B0=E6=82=A8=E7=9A=84</font></fon=
+t><cite><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;">.vimrc</font></font></cite><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">=E6=9D=A5=E9=9B=86=E6=88=
+=90=EF=BC=9A</font></font></p>
+<div class=3D"highlight-vim notranslate"><div class=3D"highlight"><pre><spa=
+n></span><span class=3D"k">if</span> has<span class=3D"p">(</span><span cla=
+ss=3D"s1">'python'</span><span class=3D"p">)</span>
+  map <span class=3D"p">&lt;</span>C<span class=3D"p">-</span>K<span class=
+=3D"p">&gt;</span> :<span class=3D"k">pyf</span> <span class=3D"p">&lt;</sp=
+an><span class=3D"nb">path</span><span class=3D"p">-</span><span class=3D"k=
+">to</span><span class=3D"p">-</span>this<span class=3D"p">-</span><span cl=
+ass=3D"k">file</span><span class=3D"p">&gt;</span>/clang<span class=3D"p">-=
+</span>format.<span class=3D"k">py</span><span class=3D"p">&lt;</span><span=
+ class=3D"k">cr</span><span class=3D"p">&gt;</span>
+  imap <span class=3D"p">&lt;</span>C<span class=3D"p">-</span>K<span class=
+=3D"p">&gt;</span> <span class=3D"p">&lt;</span><span class=3D"k">c</span><=
+span class=3D"p">-</span><span class=3D"k">o</span><span class=3D"p">&gt;</=
+span>:<span class=3D"k">pyf</span> <span class=3D"p">&lt;</span><span class=
+=3D"nb">path</span><span class=3D"p">-</span><span class=3D"k">to</span><sp=
+an class=3D"p">-</span>this<span class=3D"p">-</span><span class=3D"k">file=
+</span><span class=3D"p">&gt;</span>/clang<span class=3D"p">-</span>format.=
+<span class=3D"k">py</span><span class=3D"p">&lt;</span><span class=3D"k">c=
+r</span><span class=3D"p">&gt;</span>
+<span class=3D"k">elseif</span> has<span class=3D"p">(</span><span class=3D=
+"s1">'python3'</span><span class=3D"p">)</span>
+  map <span class=3D"p">&lt;</span>C<span class=3D"p">-</span>K<span class=
+=3D"p">&gt;</span> :py3f <span class=3D"p">&lt;</span><span class=3D"nb">pa=
+th</span><span class=3D"p">-</span><span class=3D"k">to</span><span class=
+=3D"p">-</span>this<span class=3D"p">-</span><span class=3D"k">file</span><=
+span class=3D"p">&gt;</span>/clang<span class=3D"p">-</span>format.<span cl=
+ass=3D"k">py</span><span class=3D"p">&lt;</span><span class=3D"k">cr</span>=
+<span class=3D"p">&gt;</span>
+  imap <span class=3D"p">&lt;</span>C<span class=3D"p">-</span>K<span class=
+=3D"p">&gt;</span> <span class=3D"p">&lt;</span><span class=3D"k">c</span><=
+span class=3D"p">-</span><span class=3D"k">o</span><span class=3D"p">&gt;</=
+span>:py3f <span class=3D"p">&lt;</span><span class=3D"nb">path</span><span=
+ class=3D"p">-</span><span class=3D"k">to</span><span class=3D"p">-</span>t=
+his<span class=3D"p">-</span><span class=3D"k">file</span><span class=3D"p"=
+>&gt;</span>/clang<span class=3D"p">-</span>format.<span class=3D"k">py</sp=
+an><span class=3D"p">&lt;</span><span class=3D"k">cr</span><span class=3D"p=
+">&gt;</span>
+<span class=3D"k">endif</span>
+</pre></div>
+</div>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E7=AC=AC=E4=B8=80=E8=A1=8C=E4=B8=BA NORMAL =E5=92=8C VISUAL =E6=
+=A8=A1=E5=BC=8F=E5=90=AF=E7=94=A8</font></font><strong class=3D"program"><f=
+ont style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inher=
+it;">clang-format</font></font></strong><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;">=EF=BC=8C=E7=AC=AC=E4=BA=8C=
+=E8=A1=8C=E6=B7=BB=E5=8A=A0=E5=AF=B9 INSERT =E6=A8=A1=E5=BC=8F=E7=9A=84=E6=
+=94=AF=E6=8C=81=E3=80=82</font></font><strong class=3D"program"><font style=
+=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=E5=
+=A6=82=E6=9E=9C=E6=82=A8=E9=9C=80=E8=A6=81=E5=9C=A8=E4=B8=8D=E5=90=8C=E7=9A=
+=84=E9=94=AE=E4=B8=8A=E4=BD=BF=E7=94=A8clang =E6=A0=BC=E5=BC=8F</font></fon=
+t></strong><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;">=EF=BC=88CK =E4=BB=A3=E8=A1=A8 Ctrl+k=EF=BC=89=EF=BC=8C</=
+font><font style=3D"vertical-align: inherit;">=E8=AF=B7=E5=B0=86=E2=80=9CCK=
+=E2=80=9D=E6=9B=B4=E6=94=B9=E4=B8=BA=E5=8F=A6=E4=B8=80=E4=B8=AA=E7=BB=91=E5=
+=AE=9A=E3=80=82</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E9=80=9A=E8=BF=87=E6=AD=A4=E9=9B=86=E6=88=90=EF=BC=8C=E6=82=A8=
+=E5=8F=AF=E4=BB=A5=E6=8C=89=E7=BB=91=E5=AE=9A=E9=94=AE=EF=BC=8Cclang-format=
+ =E5=B0=86=E5=9C=A8 NORMAL =E5=92=8C INSERT =E6=A8=A1=E5=BC=8F=E4=B8=8B=E6=
+=A0=BC=E5=BC=8F=E5=8C=96=E5=BD=93=E5=89=8D=E8=A1=8C=EF=BC=8C=E6=88=96=E5=9C=
+=A8 VISUAL =E6=A8=A1=E5=BC=8F=E4=B8=8B=E6=A0=BC=E5=BC=8F=E5=8C=96=E9=80=89=
+=E5=AE=9A=E5=8C=BA=E5=9F=9F=E3=80=82</font><font style=3D"vertical-align: i=
+nherit;">=E8=AF=A5=E8=A1=8C=E6=88=96=E5=8C=BA=E5=9F=9F=E8=A2=AB=E6=89=A9=E5=
+=B1=95=E5=88=B0=E4=B8=8B=E4=B8=80=E4=B8=AA=E6=9B=B4=E5=A4=A7=E7=9A=84=E5=8F=
+=A5=E6=B3=95=E5=AE=9E=E4=BD=93=E3=80=82</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E5=AE=83=E5=9C=A8=E5=BD=93=E5=89=8D=E5=8F=AF=E8=83=BD=E6=9C=AA=
+=E4=BF=9D=E5=AD=98=E7=9A=84=E7=BC=93=E5=86=B2=E5=8C=BA=E4=B8=8A=E8=BF=90=E8=
+=A1=8C=EF=BC=8C=E5=B9=B6=E4=B8=94=E4=B8=8D=E4=BC=9A=E5=88=9B=E5=BB=BA=E6=88=
+=96=E4=BF=9D=E5=AD=98=E4=BB=BB=E4=BD=95=E6=96=87=E4=BB=B6=E3=80=82</font><f=
+ont style=3D"vertical-align: inherit;">=E8=A6=81=E6=81=A2=E5=A4=8D=E6=A0=BC=
+=E5=BC=8F=EF=BC=8C=E5=8F=AA=E9=9C=80=E6=92=A4=E6=B6=88=E5=8D=B3=E5=8F=AF=E3=
+=80=82</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E5=8F=A6=E4=B8=80=E7=A7=8D=E9=80=89=E6=8B=A9=E6=98=AF=E5=9C=A8=
+=E4=BF=9D=E5=AD=98=E6=96=87=E4=BB=B6=E6=97=B6=E6=A0=BC=E5=BC=8F=E5=8C=96=E6=
+=9B=B4=E6=94=B9=EF=BC=8C=E4=BB=8E=E8=80=8C=E9=9B=B6=E5=8A=AA=E5=8A=9B=E5=9C=
+=B0=E9=9B=86=E6=88=90=E5=88=B0=E7=BC=96=E7=A0=81=E5=B7=A5=E4=BD=9C=E6=B5=81=
+=E7=A8=8B=E4=B8=AD=E3=80=82</font><font style=3D"vertical-align: inherit;">=
+=E4=B8=BA=E6=AD=A4=EF=BC=8C=E8=AF=B7=E5=B0=86=E5=85=B6=E6=B7=BB=E5=8A=A0=E5=
+=88=B0=E6=82=A8=E7=9A=84</font></font><cite><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">.vimrc</font></font></ci=
+te><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E4=B8=AD=EF=BC=9A</font></font></p>
+<div class=3D"highlight-vim notranslate"><div class=3D"highlight"><pre><spa=
+n></span><span class=3D"k">function</span><span class=3D"p">!</span> Format=
+onsave<span class=3D"p">()</span>
+  <span class=3D"k">let</span> <span class=3D"k">l</span>:formatdiff <span =
+class=3D"p">=3D</span> <span class=3D"m">1</span>
+  <span class=3D"k">pyf</span> <span class=3D"p">&lt;</span><span class=3D"=
+nb">path</span><span class=3D"p">-</span><span class=3D"k">to</span><span c=
+lass=3D"p">-</span>this<span class=3D"p">-</span><span class=3D"k">file</sp=
+an><span class=3D"p">&gt;</span>/clang<span class=3D"p">-</span>format.<spa=
+n class=3D"k">py</span>
+<span class=3D"k">endfunction</span>
+autocmd <span class=3D"nb">BufWritePre</span> *.<span class=3D"k">h</span><=
+span class=3D"p">,</span>*.<span class=3D"k">cc</span><span class=3D"p">,</=
+span>*.cpp <span class=3D"k">call</span> Formatonsave<span class=3D"p">()</=
+span>
+</pre></div>
+</div>
+</section>
+<section id=3D"emacs-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Emacs =E9=9B=86=E6=88=90</font></font><a class=3D"headerlink" hr=
+ef=3D"https://clang.llvm.org/docs/ClangFormat.html#emacs-integration" title=
+=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=
+=A5"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;">=C2=B6</font></font></a></h2>
+<p><font style=3D"vertical-align: inherit;"></font><strong class=3D"program=
+"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">=E4=B8=8Evim</font></font></strong><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">=E7=9A=84=E9=9B=86=E6=88=
+=90=E7=B1=BB=E4=BC=BC=EF=BC=8C </font></font><strong class=3D"program"><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">emacs</font></font></strong><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">=E4=B9=9F=E6=9C=89=E9=9B=86=E6=88=90
+</font><font style=3D"vertical-align: inherit;">=E3=80=82</font></font><cit=
+e><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">=E5=AE=83=E5=8F=AF=E4=BB=A5=E5=9C=A8clang/tools/clang-format/clang=
+-format.el</font></font></cite><font style=3D"vertical-align: inherit;"><fo=
+nt style=3D"vertical-align: inherit;">=E6=89=BE=E5=88=B0</font><font style=
+=3D"vertical-align: inherit;">
+=EF=BC=8C=E5=B9=B6=E9=80=9A=E8=BF=87=E5=B0=86=E5=85=B6=E6=B7=BB=E5=8A=A0=E5=
+=88=B0=E6=82=A8=E7=9A=84</font></font><cite><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">.emacs</font></font></ci=
+te><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E6=9D=A5=E4=BD=BF=E7=94=A8=EF=BC=9A</font></font></p>
+<div class=3D"highlight-common-lisp notranslate"><div class=3D"highlight"><=
+pre><span></span><span class=3D"p">(</span><span class=3D"nb">load</span><s=
+pan class=3D"w"> </span><span class=3D"s">"&lt;path-to-clang&gt;/tools/clan=
+g-format/clang-format.el"</span><span class=3D"p">)</span>
+<span class=3D"p">(</span><span class=3D"nv">global-set-key</span><span cla=
+ss=3D"w"> </span><span class=3D"nv">[C-M-tab]</span><span class=3D"w"> </sp=
+an><span class=3D"ss">'clang-format-region</span><span class=3D"p">)</span>
+</pre></div>
+</div>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E8=BF=99=E4=BC=9A=E5=B0=86=E5=87=BD=E6=95=B0</font></font><cite>=
+<font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inh=
+erit;">clang-format-region</font></font></cite><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;">=E7=BB=91=E5=AE=9A=E5=
+=88=B0 CM-tab=EF=BC=8C=E7=84=B6=E5=90=8E=E6=A0=BC=E5=BC=8F=E5=8C=96=E5=BD=
+=93=E5=89=8D=E8=A1=8C=E6=88=96=E9=80=89=E5=AE=9A=E5=8C=BA=E5=9F=9F=E3=80=82=
+</font></font></p>
+</section>
+<section id=3D"bbedit-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">BBEdit =E9=9B=86=E6=88=90</font></font><a class=3D"headerlink" h=
+ref=3D"https://clang.llvm.org/docs/ClangFormat.html#bbedit-integration" tit=
+le=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=
+=A5"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;">=C2=B6</font></font></a></h2>
+<p><strong class=3D"program"><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;">clang-format</font></font></strong><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">=E4=B8=8D=E8=83=BD=E7=94=A8=E4=BD=9C BBEdit =E7=9A=84=E6=96=87=E6=9C=AC=
+=E8=BF=87=E6=BB=A4=E5=99=A8=EF=BC=8C=E4=BD=86=E9=80=9A=E8=BF=87=E8=84=9A=E6=
+=9C=AC=E5=8F=AF=E4=BB=A5=E5=BE=88=E5=A5=BD=E5=9C=B0=E5=B7=A5=E4=BD=9C=E3=80=
+=82</font><font style=3D"vertical-align: inherit;">=E6=89=A7=E8=A1=8C=E6=AD=
+=A4=E9=9B=86=E6=88=90=E7=9A=84 AppleScript =E5=8F=AF=E4=BB=A5=E5=9C=A8
+</font></font><cite><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">clang/tools/clang-format/clang-format-bbedit.app=
+lescript</font></font></cite><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;">=E6=89=BE=E5=88=B0=EF=BC=9B</font><font=
+ style=3D"vertical-align: inherit;">=E5=B0=86=E5=89=AF=E6=9C=AC=E6=94=BE=E5=
+=9C=A8
+</font></font><cite><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">~/Library/Application Support/BBEdit/Scripts=E4=
+=B8=AD=EF=BC=8C=E7=84=B6=E5=90=8E=E7=BC=96=E8=BE=91=E5=85=B6=E4=B8=AD=E7=9A=
+=84=E8=B7=AF=E5=BE=84=E4=BB=A5=E6=8C=87=E5=90=91</font></font></cite><font =
+style=3D"vertical-align: inherit;"></font><strong class=3D"program"><font s=
+tyle=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;">=
+clang-format</font></font></strong><font style=3D"vertical-align: inherit;"=
+><font style=3D"vertical-align: inherit;">=E7=9A=84=E6=9C=AC=E5=9C=B0=E5=89=
+=AF=E6=9C=AC</font><font style=3D"vertical-align: inherit;">=E3=80=82</font=
+></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E9=80=9A=E8=BF=87=E6=AD=A4=E9=9B=86=E6=88=90=EF=BC=8C=E6=82=A8=
+=E5=8F=AF=E4=BB=A5=E4=BB=8E=E2=80=9C=E8=84=9A=E6=9C=AC=E2=80=9D=E8=8F=9C=E5=
+=8D=95=E4=B8=AD=E9=80=89=E6=8B=A9=E8=84=9A=E6=9C=AC=EF=BC=8C
+ </font></font><strong class=3D"program"><font style=3D"vertical-align: inh=
+erit;"><font style=3D"vertical-align: inherit;">clang-format</font></font><=
+/strong><font style=3D"vertical-align: inherit;"><font style=3D"vertical-al=
+ign: inherit;">=E5=B0=86=E6=A0=BC=E5=BC=8F=E5=8C=96=E6=89=80=E9=80=89=E5=86=
+=85=E5=AE=B9=E3=80=82</font><font style=3D"vertical-align: inherit;">=E8=AF=
+=B7=E6=B3=A8=E6=84=8F=EF=BC=8C=E6=82=A8=E5=8F=AF=E4=BB=A5=E9=80=9A=E8=BF=87=
+=E9=87=8D=E5=91=BD=E5=90=8D=E8=84=9A=E6=9C=AC=E6=9D=A5=E9=87=8D=E5=91=BD=E5=
+=90=8D=E8=8F=9C=E5=8D=95=E9=A1=B9=EF=BC=8C=E5=B9=B6=E4=B8=94=E5=8F=AF=E4=BB=
+=A5=E5=9C=A8 BBEdit =E9=A6=96=E9=80=89=E9=A1=B9=E7=9A=84=E2=80=9C=E8=8F=9C=
+=E5=8D=95=E5=92=8C=E5=BF=AB=E6=8D=B7=E6=96=B9=E5=BC=8F=E2=80=9D=E4=B8=8B=E4=
+=B8=BA=E8=8F=9C=E5=8D=95=E9=A1=B9=E5=88=86=E9=85=8D=E9=94=AE=E7=9B=98=E5=BF=
+=AB=E6=8D=B7=E9=94=AE=E3=80=82</font></font></p>
+</section>
+<section id=3D"clion-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">CLion =E9=9B=86=E6=88=90</font></font><a class=3D"headerlink" hr=
+ef=3D"https://clang.llvm.org/docs/ClangFormat.html#clion-integration" title=
+=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=
+=A5"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align=
+: inherit;">=C2=B6</font></font></a></h2>
+<p><strong class=3D"program"><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;">clang-format</font></font></strong><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">=E4=BD=9C=E4=B8=BA=E6=9B=BF=E4=BB=A3=E4=BB=A3=E7=A0=81=E6=A0=BC=E5=BC=8F=
+=E5=8C=96=E7=A8=8B=E5=BA=8F</font><font style=3D"vertical-align: inherit;">=
+=E9=9B=86=E6=88=90=E5=88=B0</font></font><a class=3D"reference external" hr=
+ef=3D"https://www.jetbrains.com/clion/"><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;">CLion=E4=B8=AD=E3=80=82</fon=
+t></font></a><font style=3D"vertical-align: inherit;"></font><code class=3D=
+"docutils literal notranslate"><span class=3D"pre">.clang-format</span></co=
+de><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E5=BD=93=E9=A1=B9=E7=9B=AE=E6=A0=B9=E7=9B=AE=E5=BD=95=E4=B8=8B</=
+font><font style=3D"vertical-align: inherit;">=E6=9C=89=E6=96=87=E4=BB=B6=
+=E6=97=B6=EF=BC=8CCLion =E4=BC=9A=E8=87=AA=E5=8A=A8=E6=89=93=E5=BC=80=E5=AE=
+=83=E3=80=82</font><font style=3D"vertical-align: inherit;">=E4=BB=A3=E7=A0=
+=81=E6=A0=B7=E5=BC=8F=E8=A7=84=E5=88=99=E4=BC=9A=E5=9C=A8=E6=82=A8=E9=94=AE=
+=E5=85=A5=E6=97=B6=E5=BA=94=E7=94=A8=EF=BC=8C=E5=8C=85=E6=8B=AC=E7=BC=A9=E8=
+=BF=9B=E3=80=81=E8=87=AA=E5=8A=A8=E5=AE=8C=E6=88=90=E3=80=81=E4=BB=A3=E7=A0=
+=81=E7=94=9F=E6=88=90=E5=92=8C=E9=87=8D=E6=9E=84=E3=80=82</font></font></p>
+<p><strong class=3D"program"><font style=3D"vertical-align: inherit;"><font=
+ style=3D"vertical-align: inherit;">clang-format</font></font></strong><fon=
+t style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit=
+;">=E4=B9=9F=E5=8F=AF=E4=BB=A5=E5=9C=A8=E6=B2=A1=E6=9C=89=E6=96=87=E4=BB=B6=
+=E7=9A=84=E6=83=85=E5=86=B5=E4=B8=8B=E5=90=AF=E7=94=A8</font></font><code c=
+lass=3D"docutils literal notranslate"><span class=3D"pre">.clang-format</sp=
+an></code><font style=3D"vertical-align: inherit;"><font style=3D"vertical-=
+align: inherit;">=E3=80=82</font><font style=3D"vertical-align: inherit;">=
+=E5=9C=A8=E8=BF=99=E7=A7=8D=E6=83=85=E5=86=B5=E4=B8=8B=EF=BC=8CCLion =E4=BC=
+=9A=E6=8F=90=E7=A4=BA=E6=82=A8=E6=A0=B9=E6=8D=AE=E5=BD=93=E5=89=8D IDE =E8=
+=AE=BE=E7=BD=AE=E6=88=96=E9=BB=98=E8=AE=A4 LLVM =E6=A0=B7=E5=BC=8F=E5=88=9B=
+=E5=BB=BA=E4=B8=80=E4=B8=AA=E3=80=82</font></font></p>
+</section>
+<section id=3D"visual-studio-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Visual Studio =E9=9B=86=E6=88=90</font></font><a class=3D"header=
+link" href=3D"https://clang.llvm.org/docs/ClangFormat.html#visual-studio-in=
+tegration" title=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=
+=E9=93=BE=E6=8E=A5"><font style=3D"vertical-align: inherit;"><font style=3D=
+"vertical-align: inherit;">=C2=B6</font></font></a></h2>
+<p><font style=3D"vertical-align: inherit;"></font><a class=3D"reference ex=
+ternal" href=3D"https://llvm.org/builds/"><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">=E4=BB=8Ealpha =E6=9E=84=
+=E5=BB=BA=E7=AB=99=E7=82=B9</font></font></a><font style=3D"vertical-align:=
+ inherit;"><font style=3D"vertical-align: inherit;">=E4=B8=8B=E8=BD=BD=E6=
+=9C=80=E6=96=B0=E7=9A=84 Visual Studio =E6=89=A9=E5=B1=95</font><font style=
+=3D"vertical-align: inherit;">=E3=80=82</font><font style=3D"vertical-align=
+: inherit;">=E9=BB=98=E8=AE=A4=E9=94=AE=E7=BB=91=E5=AE=9A=E6=98=AF Ctrl-R=
+=E3=80=81Ctrl-F=E3=80=82</font></font></p>
+</section>
+<section id=3D"visual-studio-code-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Visual Studio =E4=BB=A3=E7=A0=81=E9=9B=86=E6=88=90</font></font>=
+<a class=3D"headerlink" href=3D"https://clang.llvm.org/docs/ClangFormat.htm=
+l#visual-studio-code-integration" title=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=
+=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=A5"><font style=3D"vertical-align: =
+inherit;"><font style=3D"vertical-align: inherit;">=C2=B6</font></font></a>=
+</h2>
+<p><font style=3D"vertical-align: inherit;"></font><a class=3D"reference ex=
+ternal" href=3D"https://marketplace.visualstudio.com/items?itemName=3Dxaver=
+.clang-format"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">=E4=BB=8EVisual Studio Marketplace</font></font></a><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">=E8=8E=B7=E5=8F=96=E6=9C=80=E6=96=B0=E7=9A=84 Visual Studio Code =E6=
+=89=A9=E5=B1=95</font><font style=3D"vertical-align: inherit;">=E3=80=82</f=
+ont><font style=3D"vertical-align: inherit;">=E9=BB=98=E8=AE=A4=E9=94=AE=E7=
+=BB=91=E5=AE=9A=E6=98=AF Alt-Shift-F=E3=80=82</font></font></p>
+</section>
+<section id=3D"git-integration">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">Git =E9=9B=86=E6=88=90</font></font><a class=3D"headerlink" href=
+=3D"https://clang.llvm.org/docs/ClangFormat.html#git-integration" title=3D"=
+=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=E6=8E=A5"><=
+font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inhe=
+rit;">=C2=B6</font></font></a></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E8=84=9A=E6=9C=AC</font></font><cite><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">clang/tools/clang-fo=
+rmat/git-clang-format</font></font></cite><font style=3D"vertical-align: in=
+herit;"><font style=3D"vertical-align: inherit;">=E5=8F=AF=E7=94=A8=E4=BA=
+=8E=E4=BB=85=E6=A0=BC=E5=BC=8F=E5=8C=96 git =E6=8F=90=E4=BA=A4=E4=B8=AD=E8=
+=A7=A6=E5=8F=8A=E7=9A=84=E8=A1=8C=EF=BC=9A</font></font></p>
+<div class=3D"highlight-console notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"gp">% </span>git<span class=3D"w"> </span>clang=
+-format<span class=3D"w"> </span>-h
+<span class=3D"go">usage: git clang-format [OPTIONS] [&lt;commit&gt;] [&lt;=
+commit&gt;|--staged] [--] [&lt;file&gt;...]</span>
+
+<span class=3D"go">If zero or one commits are given, run clang-format on al=
+l lines that differ</span>
+<span class=3D"go">between the working directory and &lt;commit&gt;, which =
+defaults to HEAD.  Changes are</span>
+<span class=3D"go">only applied to the working directory, or in the stage/i=
+ndex.</span>
+
+<span class=3D"go">Examples:</span>
+<span class=3D"go">  To format staged changes, i.e everything that's been `=
+git add`ed:</span>
+<span class=3D"go">    git clang-format</span>
+
+<span class=3D"go">  To also format everything touched in the most recent c=
+ommit:</span>
+<span class=3D"go">    git clang-format HEAD~1</span>
+
+<span class=3D"go">  If you're on a branch off main, to format everything t=
+ouched on your branch:</span>
+<span class=3D"go">    git clang-format main</span>
+
+<span class=3D"go">If two commits are given (requires --diff), run clang-fo=
+rmat on all lines in the</span>
+<span class=3D"go">second &lt;commit&gt; that differ from the first &lt;com=
+mit&gt;.</span>
+
+<span class=3D"go">The following git-config settings set the default of the=
+ corresponding option:</span>
+<span class=3D"go">  clangFormat.binary</span>
+<span class=3D"go">  clangFormat.commit</span>
+<span class=3D"go">  clangFormat.extensions</span>
+<span class=3D"go">  clangFormat.style</span>
+
+<span class=3D"go">positional arguments:</span>
+<span class=3D"go">  &lt;commit&gt;              revision from which to com=
+pute the diff</span>
+<span class=3D"go">  &lt;file&gt;...             if specified, only conside=
+r differences in these files</span>
+
+<span class=3D"go">optional arguments:</span>
+<span class=3D"go">  -h, --help            show this help message and exit<=
+/span>
+<span class=3D"go">  --binary BINARY       path to clang-format</span>
+<span class=3D"go">  --commit COMMIT       default commit to use if none is=
+ specified</span>
+<span class=3D"go">  --diff                print a diff instead of applying=
+ the changes</span>
+<span class=3D"go">  --diffstat            print a diffstat instead of appl=
+ying the changes</span>
+<span class=3D"go">  --extensions EXTENSIONS</span>
+<span class=3D"go">                        comma-separated list of file ext=
+ensions to format, excluding the period and case-insensitive</span>
+<span class=3D"go">  -f, --force           allow changes to unstaged files<=
+/span>
+<span class=3D"go">  -p, --patch           select hunks interactively</span=
+>
+<span class=3D"go">  -q, --quiet           print less information</span>
+<span class=3D"go">  --staged, --cached    format lines in the stage instea=
+d of the working dir</span>
+<span class=3D"go">  --style STYLE         passed to clang-format</span>
+<span class=3D"go">  -v, --verbose         print extra information</span>
+</pre></div>
+</div>
+</section>
+<section id=3D"script-for-patch-reformatting">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">=E7=94=A8=E4=BA=8E=E8=A1=A5=E4=B8=81=E9=87=8D=E6=96=B0=E6=A0=BC=
+=E5=BC=8F=E5=8C=96=E7=9A=84=E8=84=9A=E6=9C=AC</font></font><a class=3D"head=
+erlink" href=3D"https://clang.llvm.org/docs/ClangFormat.html#script-for-pat=
+ch-reformatting" title=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=
+=AE=9A=E9=93=BE=E6=8E=A5"><font style=3D"vertical-align: inherit;"><font st=
+yle=3D"vertical-align: inherit;">=C2=B6</font></font></a></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">python =E8=84=9A=E6=9C=AC</font></font><cite><font style=3D"verti=
+cal-align: inherit;"><font style=3D"vertical-align: inherit;">clang/tools/c=
+lang-format/clang-format-diff.py</font></font></cite><font style=3D"vertica=
+l-align: inherit;"><font style=3D"vertical-align: inherit;">=E8=A7=A3=E6=9E=
+=90=E7=BB=9F=E4=B8=80 diff =E7=9A=84=E8=BE=93=E5=87=BA=EF=BC=8C=E5=B9=B6=E4=
+=BD=BF=E7=94=A8
+</font></font><strong class=3D"program"><font style=3D"vertical-align: inhe=
+rit;"><font style=3D"vertical-align: inherit;">clang-format</font></font></=
+strong><font style=3D"vertical-align: inherit;"><font style=3D"vertical-ali=
+gn: inherit;">=E9=87=8D=E6=96=B0=E6=A0=BC=E5=BC=8F=E5=8C=96=E6=89=80=E6=9C=
+=89=E5=8C=85=E5=90=AB=E7=9A=84=E8=A1=8C=E3=80=82</font></font></p>
+<div class=3D"highlight-console notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"go">usage: clang-format-diff.py [-h] [-i] [-p N=
+UM] [-regex PATTERN] [-iregex PATTERN] [-sort-includes] [-v] [-style STYLE]=
+</span>
+<span class=3D"go">                            [-fallback-style FALLBACK_ST=
+YLE] [-binary BINARY]</span>
+
+<span class=3D"go">This script reads input from a unified diff and reformat=
+s all the changed</span>
+<span class=3D"go">lines. This is useful to reformat all the lines touched =
+by a specific patch.</span>
+<span class=3D"go">Example usage for git/svn users:</span>
+
+<span class=3D"go">  git diff -U0 --no-color --relative HEAD^ | clang-forma=
+t-diff.py -p1 -i</span>
+<span class=3D"go">  svn diff --diff-cmd=3Ddiff -x-U0 | clang-format-diff.p=
+y -i</span>
+
+<span class=3D"go">It should be noted that the filename contained in the di=
+ff is used unmodified</span>
+<span class=3D"go">to determine the source file to update. Users calling th=
+is script directly</span>
+<span class=3D"go">should be careful to ensure that the path in the diff is=
+ correct relative to the</span>
+<span class=3D"go">current working directory.</span>
+
+<span class=3D"go">optional arguments:</span>
+<span class=3D"go">  -h, --help            show this help message and exit<=
+/span>
+<span class=3D"go">  -i                    apply edits to files instead of =
+displaying a diff</span>
+<span class=3D"go">  -p NUM                strip the smallest prefix contai=
+ning P slashes</span>
+<span class=3D"go">  -regex PATTERN        custom pattern selecting file pa=
+ths to reformat (case sensitive, overrides -iregex)</span>
+<span class=3D"go">  -iregex PATTERN       custom pattern selecting file pa=
+ths to reformat (case insensitive, overridden by -regex)</span>
+<span class=3D"go">  -sort-includes        let clang-format sort include bl=
+ocks</span>
+<span class=3D"go">  -v, --verbose         be more verbose, ineffective wit=
+hout -i</span>
+<span class=3D"go">  -style STYLE          formatting style to apply (LLVM,=
+ GNU, Google, Chromium, Microsoft, Mozilla, WebKit)</span>
+<span class=3D"go">  -fallback-style FALLBACK_STYLE</span>
+<span class=3D"go">                        The name of the predefined style=
+ used as a fallback in case clang-format is invoked with-style=3Dfile, but =
+can not</span>
+<span class=3D"go">                        find the .clang-formatfile to us=
+e.</span>
+<span class=3D"go">  -binary BINARY        location of binary to use for cl=
+ang-format</span>
+</pre></div>
+</div>
+<p><font style=3D"vertical-align: inherit;"></font><strong class=3D"program=
+"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: i=
+nherit;">=E8=A6=81=E9=87=8D=E6=96=B0=E6=A0=BC=E5=BC=8F=E5=8C=96=E6=9C=80=E6=
+=96=B0 Mercurial/ hg</font></font></strong><font style=3D"vertical-align: i=
+nherit;"><font style=3D"vertical-align: inherit;">=E6=8F=90=E4=BA=A4=E4=B8=
+=AD=E7=9A=84=E6=89=80=E6=9C=89=E8=A1=8C</font><font style=3D"vertical-align=
+: inherit;">=EF=BC=8C=E8=AF=B7=E6=89=A7=E8=A1=8C=E4=BB=A5=E4=B8=8B=E6=93=8D=
+=E4=BD=9C=EF=BC=9A</font></font></p>
+<div class=3D"highlight-console notranslate"><div class=3D"highlight"><pre>=
+<span></span><span class=3D"go">hg diff -U0 --color=3Dnever | clang-format-=
+diff.py -i -p1</span>
+</pre></div>
+</div>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E9=80=89=E9=A1=B9</font></font><cite><font style=3D"vertical-ali=
+gn: inherit;"><font style=3D"vertical-align: inherit;">-U0</font></font></c=
+ite><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">=E5=B0=86=E5=88=9B=E5=BB=BA=E4=B8=80=E4=B8=AA=E6=B2=A1=E6=9C=89=
+=E4=B8=8A=E4=B8=8B=E6=96=87=E8=A1=8C=E7=9A=84=E5=B7=AE=E5=BC=82=EF=BC=88=E8=
+=84=9A=E6=9C=AC=E4=B9=9F=E4=BC=9A=E6=A0=BC=E5=BC=8F=E5=8C=96=E5=AE=83=E4=BB=
+=AC=EF=BC=89=E3=80=82</font></font></p>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E8=BF=99=E4=BA=9B=E5=91=BD=E4=BB=A4=E4=BD=BF=E7=94=A8 diff =E8=
+=BE=93=E5=87=BA=E4=B8=AD=E6=98=BE=E7=A4=BA=E7=9A=84=E6=96=87=E4=BB=B6=E8=B7=
+=AF=E5=BE=84=EF=BC=8C=E5=9B=A0=E6=AD=A4=E5=AE=83=E4=BB=AC=E5=8F=AA=E8=83=BD=
+=E4=BB=8E=E5=AD=98=E5=82=A8=E5=BA=93=E7=9A=84=E6=A0=B9=E7=9B=AE=E5=BD=95=E8=
+=BF=90=E8=A1=8C=E3=80=82</font></font></p>
+</section>
+<section id=3D"current-state-of-clang-format-for-llvm">
+<h2><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align:=
+ inherit;">LLVM =E7=9A=84 Clang =E6=A0=BC=E5=BC=8F=E7=9A=84=E5=BD=93=E5=89=
+=8D=E7=8A=B6=E6=80=81</font></font><a class=3D"headerlink" href=3D"https://=
+clang.llvm.org/docs/ClangFormat.html#current-state-of-clang-format-for-llvm=
+" title=3D"=E6=AD=A4=E6=A0=87=E9=A2=98=E7=9A=84=E5=9B=BA=E5=AE=9A=E9=93=BE=
+=E6=8E=A5"><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;">=C2=B6</font></font></a></h2>
+<p><font style=3D"vertical-align: inherit;"><font style=3D"vertical-align: =
+inherit;">=E4=B8=8B=E8=A1=A8</font></font><a class=3D"reference internal" h=
+ref=3D"https://clang.llvm.org/docs/ClangFormattedStatus.html"><span class=
+=3D"doc"><font style=3D"vertical-align: inherit;"><font style=3D"vertical-a=
+lign: inherit;">Clang =E6=A0=BC=E5=BC=8F=E5=8C=96=E7=8A=B6=E6=80=81</font><=
+/font></span></a><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">=E6=98=BE=E7=A4=BA=E4=BA=86=E6=95=B4=E4=B8=AA LLVM =
+=E6=BA=90=E6=A0=91=E7=9A=84 clang =E6=A0=BC=E5=BC=8F=E5=8C=96=E7=9A=84=E5=
+=BD=93=E5=89=8D=E7=8A=B6=E6=80=81=E3=80=82</font></font></p>
+</section>
+</section>
+
+
+      </div>
+      <div class=3D"bottomnav" role=3D"navigation" aria-label=3D"=E5=BA=95=
+=E9=83=A8=E5=AF=BC=E8=88=AA">
+     =20
+        <p><font style=3D"vertical-align: inherit;"><font style=3D"vertical=
+-align: inherit;">
+        =C2=AB&nbsp;&nbsp; </font></font><a href=3D"https://clang.llvm.org/=
+docs/ClangCheck.html"><font style=3D"vertical-align: inherit;"><font style=
+=3D"vertical-align: inherit;">ClangCheck</font></font></a><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">=20
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+        </font></font><a class=3D"uplink" href=3D"https://clang.llvm.org/do=
+cs/index.html"><font style=3D"vertical-align: inherit;"><font style=3D"vert=
+ical-align: inherit;">=E5=86=85=E5=AE=B9</font></font></a><font style=3D"ve=
+rtical-align: inherit;"><font style=3D"vertical-align: inherit;">
+        &nbsp;&nbsp;::&nbsp;&nbsp;
+         </font></font><a href=3D"https://clang.llvm.org/docs/ClangFormatSt=
+yleOptions.html"><font style=3D"vertical-align: inherit;"><font style=3D"ve=
+rtical-align: inherit;">Clang =E6=A0=BC=E5=BC=8F=E6=A0=B7=E5=BC=8F=E9=80=89=
+=E9=A1=B9</font></font></a><font style=3D"vertical-align: inherit;"><font s=
+tyle=3D"vertical-align: inherit;">&nbsp;&nbsp;=C2=BB
+        </font></font></p>
+
+      </div>
+
+    <div class=3D"footer" role=3D"contentinfo"><font style=3D"vertical-alig=
+n: inherit;"><font style=3D"vertical-align: inherit;">
+    =C2=A9 =E7=89=88=E6=9D=83=E6=89=80=E6=9C=89 2007-2023=EF=BC=8CClang =E5=
+=9B=A2=E9=98=9F=E3=80=82</font><font style=3D"vertical-align: inherit;">=E4=
+=BD=BF=E7=94=A8</font></font><a href=3D"https://www.sphinx-doc.org/"><font =
+style=3D"vertical-align: inherit;"><font style=3D"vertical-align: inherit;"=
+>Sphinx</font></font></a><font style=3D"vertical-align: inherit;"><font sty=
+le=3D"vertical-align: inherit;"> 7.1.2 =E5=88=9B=E5=BB=BA=E3=80=82
+    </font></font></div><div id=3D"goog-gt-tt" class=3D"VIpgJd-yAWNEb-L7lbk=
+b skiptranslate" style=3D"border-radius: 12px; margin: 0 0 0 -23px; padding=
+: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=3D""><div id=
+=3D"goog-gt-vt" class=3D"VIpgJd-yAWNEb-hvhgNd"><div class=3D" VIpgJd-yAWNEb=
+-hvhgNd-l4eHX-i3jM8c"><img src=3D"https://fonts.gstatic.com/s/i/productlogo=
+s/translate/v14/24px.svg" width=3D"24" height=3D"24" alt=3D""></div><div cl=
+ass=3D" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class=3D"VIpgJd-yAWNEb-hvh=
+gNd-IuizWc" dir=3D"ltr">=E5=8E=9F=E6=96=87</div><div id=3D"goog-gt-original=
+-text" class=3D"VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></di=
+v></div><div class=3D"VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class=3D"VIpgJd=
+-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir=3D"ltr"><div class=3D"VIpgJd-yAWNEb-h=
+vhgNd-UTujCb">=E8=AF=B7=E5=AF=B9=E6=AD=A4=E7=BF=BB=E8=AF=91=E8=AF=84=E5=88=
+=86</div><div class=3D"VIpgJd-yAWNEb-hvhgNd-eO9mKe">=E6=82=A8=E7=9A=84=E5=
+=8F=8D=E9=A6=88=E5=B0=86=E7=94=A8=E4=BA=8E=E6=94=B9=E8=BF=9B=E8=B0=B7=E6=AD=
+=8C=E7=BF=BB=E8=AF=91</div></div><div class=3D"VIpgJd-yAWNEb-hvhgNd-xgov5 l=
+tr"><button id=3D"goog-gt-thumbUpButton" type=3D"button" class=3D"VIpgJd-yA=
+WNEb-hvhgNd-bgm6sf" title=3D"=E7=BF=BB=E8=AF=91=E8=B4=A8=E9=87=8F=E5=BE=88=
+=E6=A3=92" aria-label=3D"=E7=BF=BB=E8=AF=91=E8=B4=A8=E9=87=8F=E5=BE=88=E6=
+=A3=92" aria-pressed=3D"false"><span id=3D"goog-gt-thumbUpIcon"><svg width=
+=3D"24" height=3D"24" viewBox=3D"0 0 24 24" focusable=3D"false" class=3D"VI=
+pgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d=3D"M21 7h-6.31l.95-4.57.03-.32c0-.=
+41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3=
+.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V=
+8l4.34-4.34L12 9h9v2z"></path></svg></span><span id=3D"goog-gt-thumbUpIconF=
+illed"><svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" focusable=3D"f=
+alse" class=3D"VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d=3D"M21 7h-6.31l.9=
+5-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54=
+-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V=
+7z"></path></svg></span></button><button id=3D"goog-gt-thumbDownButton" typ=
+e=3D"button" class=3D"VIpgJd-yAWNEb-hvhgNd-bgm6sf" title=3D"=E7=BF=BB=E8=AF=
+=91=E8=B4=A8=E9=87=8F=E5=BE=88=E5=B7=AE" aria-label=3D"=E7=BF=BB=E8=AF=91=
+=E8=B4=A8=E9=87=8F=E5=BE=88=E5=B7=AE" aria-pressed=3D"false"><span id=3D"go=
+og-gt-thumbDownIcon"><svg width=3D"24" height=3D"24" viewBox=3D"0 0 24 24" =
+focusable=3D"false" class=3D"VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d=3D"=
+M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V=
+4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 =
+2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span=
+><span id=3D"goog-gt-thumbDownIconFilled"><svg width=3D"24" height=3D"24" v=
+iewBox=3D"0 0 24 24" focusable=3D"false" class=3D"VIpgJd-yAWNEb-hvhgNd-THI6=
+Vb NMm5M"><path d=3D"M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 2=
+4s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.1=
+4.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div><=
+/div><div id=3D"goog-gt-votingHiddenPane" class=3D"VIpgJd-yAWNEb-hvhgNd-aXY=
+Tce"><form id=3D"goog-gt-votingForm" action=3D"https://translate.googleapis=
+.com/translate_voting?client=3Dte_lib" method=3D"post" target=3D"votingFram=
+e" class=3D"VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type=3D"text" name=3D"sl" i=
+d=3D"goog-gt-votingInputSrcLang"><input type=3D"text" name=3D"tl" id=3D"goo=
+g-gt-votingInputTrgLang"><input type=3D"text" name=3D"query" id=3D"goog-gt-=
+votingInputSrcText"><input type=3D"text" name=3D"gtrans" id=3D"goog-gt-voti=
+ngInputTrgText"><input type=3D"text" name=3D"vote" id=3D"goog-gt-votingInpu=
+tVote"></form><iframe name=3D"votingFrame" frameborder=3D"0"></iframe></div=
+></div></div>
+ =20
+</body></html>
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://clang.llvm.org/docs/_static/pygments.css?v=649a27d8
+
+@charset "utf-8";
+
+pre { line-height: 125%; }
+
+td.linenos .normal { color: rgb(102, 102, 102); background-color: transpare=
+nt; padding-left: 5px; padding-right: 5px; }
+
+span.linenos { color: rgb(102, 102, 102); background-color: transparent; pa=
+dding-left: 5px; padding-right: 5px; }
+
+td.linenos .special { color: rgb(0, 0, 0); background-color: rgb(255, 255, =
+192); padding-left: 5px; padding-right: 5px; }
+
+span.linenos.special { color: rgb(0, 0, 0); background-color: rgb(255, 255,=
+ 192); padding-left: 5px; padding-right: 5px; }
+
+.highlight .hll { background-color: rgb(255, 255, 204); }
+
+.highlight { background: rgb(240, 240, 240); }
+
+.highlight .c { color: rgb(96, 160, 176); font-style: italic; }
+
+.highlight .err { border: 1px solid rgb(255, 0, 0); }
+
+.highlight .k { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .o { color: rgb(102, 102, 102); }
+
+.highlight .ch { color: rgb(96, 160, 176); font-style: italic; }
+
+.highlight .cm { color: rgb(96, 160, 176); font-style: italic; }
+
+.highlight .cp { color: rgb(0, 112, 32); }
+
+.highlight .cpf { color: rgb(96, 160, 176); font-style: italic; }
+
+.highlight .c1 { color: rgb(96, 160, 176); font-style: italic; }
+
+.highlight .cs { color: rgb(96, 160, 176); background-color: rgb(255, 240, =
+240); }
+
+.highlight .gd { color: rgb(160, 0, 0); }
+
+.highlight .ge { font-style: italic; }
+
+.highlight .ges { font-weight: bold; font-style: italic; }
+
+.highlight .gr { color: rgb(255, 0, 0); }
+
+.highlight .gh { color: rgb(0, 0, 128); font-weight: bold; }
+
+.highlight .gi { color: rgb(0, 160, 0); }
+
+.highlight .go { color: rgb(136, 136, 136); }
+
+.highlight .gp { color: rgb(198, 93, 9); font-weight: bold; }
+
+.highlight .gs { font-weight: bold; }
+
+.highlight .gu { color: rgb(128, 0, 128); font-weight: bold; }
+
+.highlight .gt { color: rgb(0, 68, 221); }
+
+.highlight .kc { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kd { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kn { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kp { color: rgb(0, 112, 32); }
+
+.highlight .kr { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .kt { color: rgb(144, 32, 0); }
+
+.highlight .m { color: rgb(64, 160, 112); }
+
+.highlight .s { color: rgb(64, 112, 160); }
+
+.highlight .na { color: rgb(64, 112, 160); }
+
+.highlight .nb { color: rgb(0, 112, 32); }
+
+.highlight .nc { color: rgb(14, 132, 181); font-weight: bold; }
+
+.highlight .no { color: rgb(96, 173, 213); }
+
+.highlight .nd { color: rgb(85, 85, 85); font-weight: bold; }
+
+.highlight .ni { color: rgb(213, 85, 55); font-weight: bold; }
+
+.highlight .ne { color: rgb(0, 112, 32); }
+
+.highlight .nf { color: rgb(6, 40, 126); }
+
+.highlight .nl { color: rgb(0, 32, 112); font-weight: bold; }
+
+.highlight .nn { color: rgb(14, 132, 181); font-weight: bold; }
+
+.highlight .nt { color: rgb(6, 40, 115); font-weight: bold; }
+
+.highlight .nv { color: rgb(187, 96, 213); }
+
+.highlight .ow { color: rgb(0, 112, 32); font-weight: bold; }
+
+.highlight .w { color: rgb(187, 187, 187); }
+
+.highlight .mb { color: rgb(64, 160, 112); }
+
+.highlight .mf { color: rgb(64, 160, 112); }
+
+.highlight .mh { color: rgb(64, 160, 112); }
+
+.highlight .mi { color: rgb(64, 160, 112); }
+
+.highlight .mo { color: rgb(64, 160, 112); }
+
+.highlight .sa { color: rgb(64, 112, 160); }
+
+.highlight .sb { color: rgb(64, 112, 160); }
+
+.highlight .sc { color: rgb(64, 112, 160); }
+
+.highlight .dl { color: rgb(64, 112, 160); }
+
+.highlight .sd { color: rgb(64, 112, 160); font-style: italic; }
+
+.highlight .s2 { color: rgb(64, 112, 160); }
+
+.highlight .se { color: rgb(64, 112, 160); font-weight: bold; }
+
+.highlight .sh { color: rgb(64, 112, 160); }
+
+.highlight .si { color: rgb(112, 160, 208); font-style: italic; }
+
+.highlight .sx { color: rgb(198, 93, 9); }
+
+.highlight .sr { color: rgb(35, 83, 136); }
+
+.highlight .s1 { color: rgb(64, 112, 160); }
+
+.highlight .ss { color: rgb(81, 121, 24); }
+
+.highlight .bp { color: rgb(0, 112, 32); }
+
+.highlight .fm { color: rgb(6, 40, 126); }
+
+.highlight .vc { color: rgb(187, 96, 213); }
+
+.highlight .vg { color: rgb(187, 96, 213); }
+
+.highlight .vi { color: rgb(187, 96, 213); }
+
+.highlight .vm { color: rgb(187, 96, 213); }
+
+.highlight .il { color: rgb(64, 160, 112); }
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://clang.llvm.org/docs/_static/haiku.css?v=d31ea6cb
+
+@charset "utf-8";
+
+@import url("basic.css");
+
+html { margin: 0px; padding: 0px; background: url("bg-page.png") left top r=
+epeat-x rgb(255, 255, 255); }
+
+body { line-height: 1.5; margin: auto; padding: 0px; font-family: "DejaVu S=
+ans", Arial, Helvetica, sans-serif; min-width: 59em; max-width: 70em; color=
+: rgb(51, 51, 51); }
+
+div.footer { padding: 8px; font-size: 11px; text-align: center; letter-spac=
+ing: 0.5px; }
+
+a:link { font-weight: bold; text-decoration: none; color: rgb(220, 60, 1); =
+}
+
+a:visited { font-weight: bold; text-decoration: none; color: rgb(137, 38, 1=
+); }
+
+a:hover, a:active { text-decoration: underline; color: rgb(255, 69, 0); }
+
+h1 a:hover, a:active { text-decoration: none; color: rgb(12, 55, 98); }
+
+h2 a:hover, a:active { text-decoration: none; color: rgb(12, 55, 98); }
+
+h3 a:hover, a:active { text-decoration: none; color: rgb(12, 55, 98); }
+
+h4 a:hover, a:active { text-decoration: none; color: rgb(12, 55, 98); }
+
+a.headerlink { color: rgb(167, 206, 56); padding-left: 5px; }
+
+a.headerlink:hover { color: rgb(167, 206, 56); }
+
+div.content { margin: 20px 40px 50px; font-size: 0.9em; }
+
+div.header { position: relative; left: 0px; top: 0px; height: 85px; padding=
+: 0px 40px; }
+
+div.header h1 { font-size: 1.6em; font-weight: normal; letter-spacing: 1px;=
+ color: rgb(12, 55, 98); border: 0px; margin: 0px; padding-top: 15px; }
+
+div.header h1 a { font-weight: normal; color: rgb(12, 55, 98); }
+
+div.header h2 { font-size: 1.3em; font-weight: normal; letter-spacing: 1px;=
+ text-transform: uppercase; color: rgb(170, 170, 170); border: 0px; margin-=
+top: -3px; padding: 0px; }
+
+div.header img.rightlogo { float: right; }
+
+div.title { font-size: 1.3em; font-weight: bold; color: rgb(12, 55, 98); bo=
+rder-bottom: thin dotted rgb(224, 224, 224); margin-bottom: 25px; }
+
+div.topnav { }
+
+div.topnav p { margin: 0px 40px; text-align: right; font-size: 0.8em; }
+
+div.bottomnav { background: rgb(238, 238, 238); }
+
+div.bottomnav p { margin-right: 40px; text-align: right; font-size: 0.8em; =
+}
+
+a.uplink { font-weight: normal; }
+
+table.index { margin: 0px 0px 30px 30px; padding: 1px; border-width: 1px; b=
+order-style: dotted; border-color: rgb(224, 224, 224); }
+
+table.index tr.heading { background-color: rgb(224, 224, 224); text-align: =
+center; font-weight: bold; font-size: 1.1em; }
+
+table.index tr.index { background-color: rgb(238, 238, 238); }
+
+table.index td { padding: 5px 20px; }
+
+table.index a:link, table.index a:visited { font-weight: normal; text-decor=
+ation: none; color: rgb(220, 60, 1); }
+
+table.index a:hover, table.index a:active { text-decoration: underline; col=
+or: rgb(255, 69, 0); }
+
+div.admonition { border-radius: 10px; border-style: dotted; border-width: t=
+hin; border-color: rgb(220, 220, 220); padding: 10px 15px; margin-bottom: 1=
+5px; margin-top: 15px; }
+
+div.note { padding: 10px 15px 10px 80px; background: url("alert_info_32.png=
+") 15px 15px no-repeat rgb(228, 255, 222); min-height: 42px; }
+
+div.warning { padding: 10px 15px 10px 80px; background: url("alert_warning_=
+32.png") 15px 15px no-repeat rgb(255, 251, 198); min-height: 42px; }
+
+div.seealso { background: rgb(228, 255, 222); }
+
+h1 { font-size: 1.3em; font-weight: bold; color: rgb(12, 55, 98); border-bo=
+ttom: thin dotted rgb(224, 224, 224); margin-top: 30px; }
+
+h2 { font-size: 1.2em; font-weight: normal; color: rgb(12, 55, 98); border-=
+bottom: thin dotted rgb(224, 224, 224); margin-top: 30px; }
+
+h3 { font-size: 1.1em; font-weight: normal; color: rgb(12, 55, 98); margin-=
+top: 30px; }
+
+h4 { font-size: 1em; font-weight: normal; color: rgb(12, 55, 98); margin-to=
+p: 30px; }
+
+p { text-align: justify; }
+
+p.last { margin-bottom: 0px; }
+
+ol { padding-left: 20px; }
+
+ul { padding-left: 5px; margin-top: 3px; }
+
+li { line-height: 1.3; }
+
+div.content ul > li { background: url("bullet_orange.png") left 0.45em no-r=
+epeat scroll transparent; list-style-image: none; list-style-type: none; pa=
+dding: 0px 0px 0px 1.666em; margin-bottom: 3px; }
+
+td { vertical-align: top; }
+
+code { background-color: rgb(226, 226, 226); font-size: 1em; font-family: m=
+onospace; }
+
+pre { border-color: rgb(12, 55, 98); border-style: dotted; border-width: th=
+in; margin: 0px 0px 12px; padding: 0.8em; }
+
+hr { border-width: 1px 0px 0px; border-top-style: solid; border-top-color: =
+rgb(204, 204, 204); border-bottom-style: initial; border-bottom-color: init=
+ial; border-right-style: initial; border-right-color: initial; border-left-=
+style: initial; border-left-color: initial; margin-bottom: 10px; margin-top=
+: 20px; }
+
+@media print {
+  .noprint { display: none; }
+  acronym[title]::after { font-size: small; content: " (" attr(title) ")"; =
+font-style: italic; }
+  acronym { border: none; }
+  div.topnav, div.bottomnav, div.header, table.index { display: none; }
+  div.content { margin: 0px; padding: 0px; }
+  html { background: rgb(255, 255, 255); }
+}
+
+.viewcode-back { font-family: "DejaVu Sans", Arial, Helvetica, sans-serif; =
+}
+
+div.viewcode-block:target { background-color: rgb(244, 222, 191); border-to=
+p: 1px solid rgb(170, 204, 153); border-bottom: 1px solid rgb(170, 204, 153=
+); margin: -1px -10px; padding: 0px 12px; }
+
+div.math p { text-align: center; }
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://clang.llvm.org/docs/_static/basic.css
+
+@charset "utf-8";
+
+div.clearer { clear: both; }
+
+div.section::after { display: block; content: ""; clear: left; }
+
+div.related { width: 100%; font-size: 90%; }
+
+div.related h3 { display: none; }
+
+div.related ul { margin: 0px; padding: 0px 0px 0px 10px; list-style: none; =
+}
+
+div.related li { display: inline; }
+
+div.related li.right { float: right; margin-right: 5px; }
+
+div.sphinxsidebarwrapper { padding: 10px 5px 0px 10px; }
+
+div.sphinxsidebar { float: left; width: 230px; margin-left: -100%; font-siz=
+e: 90%; overflow-wrap: break-word; }
+
+div.sphinxsidebar ul { list-style: none; }
+
+div.sphinxsidebar ul ul, div.sphinxsidebar ul.want-points { margin-left: 20=
+px; list-style: square; }
+
+div.sphinxsidebar ul ul { margin-top: 0px; margin-bottom: 0px; }
+
+div.sphinxsidebar form { margin-top: 10px; }
+
+div.sphinxsidebar input { border: 1px solid rgb(152, 219, 204); font-family=
+: sans-serif; font-size: 1em; }
+
+div.sphinxsidebar #searchbox form.search { overflow: hidden; }
+
+div.sphinxsidebar #searchbox input[type=3D"text"] { float: left; width: 80%=
+; padding: 0.25em; box-sizing: border-box; }
+
+div.sphinxsidebar #searchbox input[type=3D"submit"] { float: left; width: 2=
+0%; border-left: none; padding: 0.25em; box-sizing: border-box; }
+
+img { border: 0px; max-width: 100%; }
+
+ul.search { margin: 10px 0px 0px 20px; padding: 0px; }
+
+ul.search li { padding: 5px 0px 5px 20px; background-image: url("file.png")=
+; background-repeat: no-repeat; background-position: 0px 7px; }
+
+ul.search li a { font-weight: bold; }
+
+ul.search li p.context { color: rgb(136, 136, 136); margin: 2px 0px 0px 30p=
+x; text-align: left; }
+
+ul.keywordmatches li.goodmatch a { font-weight: bold; }
+
+table.contentstable { width: 90%; margin-left: auto; margin-right: auto; }
+
+table.contentstable p.biglink { line-height: 150%; }
+
+a.biglink { font-size: 1.3em; }
+
+span.linkdescr { font-style: italic; padding-top: 5px; font-size: 90%; }
+
+table.indextable { width: 100%; }
+
+table.indextable td { text-align: left; vertical-align: top; }
+
+table.indextable ul { margin-top: 0px; margin-bottom: 0px; list-style-type:=
+ none; }
+
+table.indextable > tbody > tr > td > ul { padding-left: 0em; }
+
+table.indextable tr.pcap { height: 10px; }
+
+table.indextable tr.cap { margin-top: 10px; background-color: rgb(242, 242,=
+ 242); }
+
+img.toggler { margin-right: 3px; margin-top: 3px; cursor: pointer; }
+
+div.modindex-jumpbox { border-top: 1px solid rgb(221, 221, 221); border-bot=
+tom: 1px solid rgb(221, 221, 221); margin: 1em 0px; padding: 0.4em; }
+
+div.genindex-jumpbox { border-top: 1px solid rgb(221, 221, 221); border-bot=
+tom: 1px solid rgb(221, 221, 221); margin: 1em 0px; padding: 0.4em; }
+
+table.modindextable td { padding: 2px; border-collapse: collapse; }
+
+div.body { min-width: 59em; max-width: 70em; }
+
+div.body p, div.body dd, div.body li, div.body blockquote { hyphens: auto; =
+}
+
+a.headerlink { visibility: hidden; }
+
+h1:hover > a.headerlink, h2:hover > a.headerlink, h3:hover > a.headerlink, =
+h4:hover > a.headerlink, h5:hover > a.headerlink, h6:hover > a.headerlink, =
+dt:hover > a.headerlink, caption:hover > a.headerlink, p.caption:hover > a.=
+headerlink, div.code-block-caption:hover > a.headerlink { visibility: visib=
+le; }
+
+div.body p.caption { text-align: inherit; }
+
+div.body td { text-align: left; }
+
+.first { margin-top: 0px !important; }
+
+p.rubric { margin-top: 30px; font-weight: bold; }
+
+img.align-left, figure.align-left, .figure.align-left, object.align-left { =
+clear: left; float: left; margin-right: 1em; }
+
+img.align-right, figure.align-right, .figure.align-right, object.align-righ=
+t { clear: right; float: right; margin-left: 1em; }
+
+img.align-center, figure.align-center, .figure.align-center, object.align-c=
+enter { display: block; margin-left: auto; margin-right: auto; }
+
+img.align-default, figure.align-default, .figure.align-default { display: b=
+lock; margin-left: auto; margin-right: auto; }
+
+.align-left { text-align: left; }
+
+.align-center { text-align: center; }
+
+.align-default { text-align: center; }
+
+.align-right { text-align: right; }
+
+div.sidebar, aside.sidebar { margin: 0px 0px 0.5em 1em; border: 1px solid r=
+gb(221, 221, 187); padding: 7px; background-color: rgb(255, 255, 238); widt=
+h: 40%; float: right; clear: right; overflow-x: auto; }
+
+p.sidebar-title { font-weight: bold; }
+
+nav.contents, aside.topic, div.admonition, div.topic, blockquote { clear: l=
+eft; }
+
+nav.contents, aside.topic, div.topic { border: 1px solid rgb(204, 204, 204)=
+; padding: 7px; margin: 10px 0px; }
+
+p.topic-title { font-size: 1.1em; font-weight: bold; margin-top: 10px; }
+
+div.admonition { margin-top: 10px; margin-bottom: 10px; padding: 7px; }
+
+div.admonition dt { font-weight: bold; }
+
+p.admonition-title { margin: 0px 10px 5px 0px; font-weight: bold; }
+
+div.body p.centered { text-align: center; margin-top: 25px; }
+
+div.sidebar > :last-child, aside.sidebar > :last-child, nav.contents > :las=
+t-child, aside.topic > :last-child, div.topic > :last-child, div.admonition=
+ > :last-child { margin-bottom: 0px; }
+
+div.sidebar::after, aside.sidebar::after, nav.contents::after, aside.topic:=
+:after, div.topic::after, div.admonition::after, blockquote::after { displa=
+y: block; content: ""; clear: both; }
+
+table.docutils { margin-top: 10px; margin-bottom: 10px; border: 0px; border=
+-collapse: collapse; }
+
+table.align-center { margin-left: auto; margin-right: auto; }
+
+table.align-default { margin-left: auto; margin-right: auto; }
+
+table caption span.caption-number { font-style: italic; }
+
+table caption span.caption-text { }
+
+table.docutils td, table.docutils th { padding: 1px 8px 1px 5px; border-wid=
+th: 0px 0px 1px; border-top-style: initial; border-top-color: initial; bord=
+er-left-style: initial; border-left-color: initial; border-right-style: ini=
+tial; border-right-color: initial; border-bottom-style: solid; border-botto=
+m-color: rgb(170, 170, 170); }
+
+th { text-align: left; padding-right: 5px; }
+
+table.citation { border-left: 1px solid gray; margin-left: 1px; }
+
+table.citation td { border-bottom: none; }
+
+th > :first-child, td > :first-child { margin-top: 0px; }
+
+th > :last-child, td > :last-child { margin-bottom: 0px; }
+
+div.figure, figure { margin: 0.5em; padding: 0.5em; }
+
+div.figure p.caption, figcaption { padding: 0.3em; }
+
+div.figure p.caption span.caption-number, figcaption span.caption-number { =
+font-style: italic; }
+
+div.figure p.caption span.caption-text, figcaption span.caption-text { }
+
+table.field-list td, table.field-list th { border: 0px !important; }
+
+.field-list ul { margin: 0px; padding-left: 1em; }
+
+.field-list p { margin: 0px; }
+
+.field-name { hyphens: manual; }
+
+table.hlist { margin: 1em 0px; }
+
+table.hlist td { vertical-align: top; }
+
+.sig { font-family: Consolas, Menlo, "DejaVu Sans Mono", "Bitstream Vera Sa=
+ns Mono", monospace; }
+
+.sig-name, code.descname { background-color: transparent; font-weight: bold=
+; }
+
+.sig-name { font-size: 1.1em; }
+
+code.descname { font-size: 1.2em; }
+
+.sig-prename, code.descclassname { background-color: transparent; }
+
+.optional { font-size: 1.3em; }
+
+.sig-paren { font-size: larger; }
+
+.sig-param.n { font-style: italic; }
+
+.sig-inline.c-texpr, .sig-inline.cpp-texpr { font-family: unset; }
+
+.sig.c .k, .sig.c .kt, .sig.cpp .k, .sig.cpp .kt { color: rgb(0, 51, 179); =
+}
+
+.sig.c .m, .sig.cpp .m { color: rgb(23, 80, 235); }
+
+.sig.c .s, .sig.c .sc, .sig.cpp .s, .sig.cpp .sc { color: rgb(6, 125, 23); =
+}
+
+ol.arabic { list-style: decimal; }
+
+ol.loweralpha { list-style: lower-alpha; }
+
+ol.upperalpha { list-style: upper-alpha; }
+
+ol.lowerroman { list-style: lower-roman; }
+
+ol.upperroman { list-style: upper-roman; }
+
+:not(li) > ol > li:first-child > :first-child, :not(li) > ul > li:first-chi=
+ld > :first-child { margin-top: 0px; }
+
+:not(li) > ol > li:last-child > :last-child, :not(li) > ul > li:last-child =
+> :last-child { margin-bottom: 0px; }
+
+ol.simple ol p, ol.simple ul p, ul.simple ol p, ul.simple ul p { margin-top=
+: 0px; }
+
+ol.simple > li:not(:first-child) > p, ul.simple > li:not(:first-child) > p =
+{ margin-top: 0px; }
+
+ol.simple p, ul.simple p { margin-bottom: 0px; }
+
+aside.footnote > span, div.citation > span { float: left; }
+
+aside.footnote > span:last-of-type, div.citation > span:last-of-type { padd=
+ing-right: 0.5em; }
+
+aside.footnote > p { margin-left: 2em; }
+
+div.citation > p { margin-left: 4em; }
+
+aside.footnote > p:last-of-type, div.citation > p:last-of-type { margin-bot=
+tom: 0em; }
+
+aside.footnote > p:last-of-type::after, div.citation > p:last-of-type::afte=
+r { content: ""; clear: both; }
+
+dl.field-list { display: grid; grid-template-columns: fit-content(30%) auto=
+; }
+
+dl.field-list > dt { font-weight: bold; word-break: break-word; padding-lef=
+t: 0.5em; padding-right: 5px; }
+
+dl.field-list > dd { padding-left: 0.5em; margin-top: 0em; margin-left: 0em=
+; margin-bottom: 0em; }
+
+dl { margin-bottom: 15px; }
+
+dd > :first-child { margin-top: 0px; }
+
+dd ul, dd table { margin-bottom: 10px; }
+
+dd { margin-top: 3px; margin-bottom: 10px; margin-left: 30px; }
+
+.sig dd { margin-top: 0px; margin-bottom: 0px; }
+
+.sig dl { margin-top: 0px; margin-bottom: 0px; }
+
+dl > dd:last-child, dl > dd:last-child > :last-child { margin-bottom: 0px; =
+}
+
+dt:target, span.highlighted { background-color: rgb(251, 229, 78); }
+
+rect.highlighted { fill: rgb(251, 229, 78); }
+
+dl.glossary dt { font-weight: bold; font-size: 1.1em; }
+
+.versionmodified { font-style: italic; }
+
+.system-message { background-color: rgb(255, 221, 170); padding: 5px; borde=
+r: 3px solid red; }
+
+.footnote:target { background-color: rgb(255, 255, 170); }
+
+.line-block { display: block; margin-top: 1em; margin-bottom: 1em; }
+
+.line-block .line-block { margin-top: 0px; margin-bottom: 0px; margin-left:=
+ 1.5em; }
+
+.guilabel, .menuselection { font-family: sans-serif; }
+
+.accelerator { text-decoration: underline; }
+
+.classifier { font-style: oblique; }
+
+.classifier::before { font-style: normal; margin: 0px 0.5em; content: ":"; =
+display: inline-block; }
+
+abbr, acronym { border-bottom: 1px dotted; cursor: help; }
+
+.translated { background-color: rgba(207, 255, 207, 0.2); }
+
+.untranslated { background-color: rgba(255, 207, 207, 0.2); }
+
+pre { overflow: auto hidden; }
+
+pre, div[class*=3D"highlight-"] { clear: both; }
+
+span.pre { hyphens: none; white-space: nowrap; }
+
+div[class*=3D"highlight-"] { margin: 1em 0px; }
+
+td.linenos pre { border: 0px; background-color: transparent; color: rgb(170=
+, 170, 170); }
+
+table.highlighttable { display: block; }
+
+table.highlighttable tbody { display: block; }
+
+table.highlighttable tr { display: flex; }
+
+table.highlighttable td { margin: 0px; padding: 0px; }
+
+table.highlighttable td.linenos { padding-right: 0.5em; }
+
+table.highlighttable td.code { flex: 1 1 0%; overflow: hidden; }
+
+.highlight .hll { display: block; }
+
+div.highlight pre, table.highlighttable pre { margin: 0px; }
+
+div.code-block-caption + div { margin-top: 0px; }
+
+div.code-block-caption { margin-top: 1em; padding: 2px 5px; font-size: smal=
+l; }
+
+div.code-block-caption code { background-color: transparent; }
+
+table.highlighttable td.linenos, span.linenos, div.highlight span.gp { user=
+-select: none; }
+
+div.code-block-caption span.caption-number { padding: 0.1em 0.3em; font-sty=
+le: italic; }
+
+div.code-block-caption span.caption-text { }
+
+div.literal-block-wrapper { margin: 1em 0px; }
+
+code.xref, a code { background-color: transparent; font-weight: bold; }
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code { background-color: tr=
+ansparent; }
+
+.viewcode-link { float: right; }
+
+.viewcode-back { float: right; font-family: sans-serif; }
+
+div.viewcode-block:target { margin: -1px -10px; padding: 0px 10px; }
+
+img.math { vertical-align: middle; }
+
+div.body div.math p { text-align: center; }
+
+span.eqno { float: right; }
+
+span.eqno a.headerlink { position: absolute; z-index: 1; }
+
+div.math:hover a.headerlink { visibility: visible; }
+
+@media print {
+  div.document, div.documentwrapper, div.bodywrapper { width: 100%; margin:=
+ 0px !important; }
+  div.sphinxsidebar, div.related, div.footer, #top-link { display: none; }
+}
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://clang.llvm.org/docs/_static/bg-page.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAwAAABoCAAAAADge053AAAAGUlEQVR4AWN8z4AApHJGOaOcUc4o
+58EoBwAEU2BVnlI2JgAAAABJRU5ErkJggg==
+
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://clang.llvm.org/docs/_static/graphviz.css?v=eafc0fe6
+
+@charset "utf-8";
+
+img.graphviz { border: 0px; max-width: 100%; }
+
+object.graphviz { max-width: 100%; }
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=CAM/d=0/rs=AN8SPfqeKn8wA30q4viup18yaci8udUjKQ/m=el_main_css
+
+@charset "utf-8";
+
+.VIpgJd-ZVi9od-ORHb-OEVmcd { left: 0px; top: 0px; height: 39px; width: 100%=
+; z-index: 10000001; position: fixed; border-top: none; border-right: none;=
+ border-left: none; border-image: initial; border-bottom: 1px solid rgb(107=
+, 144, 218); margin: 0px; box-shadow: rgb(153, 153, 153) 0px 0px 8px 1px; }
+
+.VIpgJd-ZVi9od-xl07Ob-OEVmcd { z-index: 10000002; border: none; position: f=
+ixed; box-shadow: rgb(153, 153, 153) 0px 3px 8px 2px; }
+
+.VIpgJd-ZVi9od-SmfZ-OEVmcd { z-index: 10000000; border: none; margin: 0px; =
+}
+
+.goog-te-gadget { font-family: arial; font-size: 11px; color: rgb(102, 102,=
+ 102); white-space: nowrap; }
+
+.goog-te-gadget img { vertical-align: middle; border: none; }
+
+.goog-te-gadget-simple { background-color: rgb(255, 255, 255); border-width=
+: 1px; border-style: solid; border-color: rgb(155, 155, 155) rgb(213, 213, =
+213) rgb(232, 232, 232); font-size: 10pt; display: inline-block; padding-to=
+p: 1px; padding-bottom: 2px; cursor: pointer; }
+
+.goog-te-gadget-icon { margin-left: 2px; margin-right: 2px; width: 19px; he=
+ight: 19px; border: none; vertical-align: middle; }
+
+.goog-te-combo { margin-left: 4px; margin-right: 4px; vertical-align: basel=
+ine; }
+
+.goog-te-gadget .goog-te-combo { margin: 4px 0px; }
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9=
+od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-=
+l4eHX-hSRGPd:active { font-size: 12px; font-weight: bold; color: rgb(68, 68=
+, 68); text-decoration: none; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-TvD9Pc-hSRG=
+Pd { display: block; margin: 0px 10px; }
+
+.VIpgJd-ZVi9od-ORHb .VIpgJd-ZVi9od-l4eHX-hSRGPd { padding-top: 2px; padding=
+-left: 4px; }
+
+.goog-te-combo, .VIpgJd-ZVi9od-ORHb *, .VIpgJd-ZVi9od-SmfZ *, .VIpgJd-ZVi9o=
+d-xl07Ob *, .VIpgJd-ZVi9od-vH1Gmf *, .VIpgJd-ZVi9od-l9xktf * { font-family:=
+ arial; font-size: 10pt; }
+
+.VIpgJd-ZVi9od-ORHb { margin: 0px; background-color: rgb(228, 239, 251); ov=
+erflow: hidden; }
+
+.VIpgJd-ZVi9od-ORHb img { border: none; }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc { color: rgb(0, 0, 0); }
+
+.VIpgJd-ZVi9od-ORHb-bN97Pc img { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-ORHb-Tswv1b { color: rgb(102, 102, 102); vertical-align: top=
+; margin-top: 0px; font-size: 7pt; }
+
+.VIpgJd-ZVi9od-ORHb-KE6vqe { width: 8px; }
+
+.VIpgJd-ZVi9od-LgbsSe { border-color: rgb(231, 231, 231); border-style: non=
+e solid solid none; border-width: 0px 1px 1px 0px; }
+
+.VIpgJd-ZVi9od-LgbsSe div { border-color: rgb(204, 204, 204) rgb(153, 153, =
+153) rgb(153, 153, 153) rgb(204, 204, 204); border-style: solid; border-wid=
+th: 1px; height: 20px; }
+
+.VIpgJd-ZVi9od-LgbsSe button { background: transparent; border: none; curso=
+r: pointer; height: 20px; overflow: hidden; margin: 0px; vertical-align: to=
+p; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-LgbsSe button:active { background: none 0px 0px repeat scrol=
+l rgb(204, 204, 204); }
+
+.VIpgJd-ZVi9od-SmfZ { margin: 0px; background-color: rgb(255, 255, 255); wh=
+ite-space: nowrap; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd { text-decoration: none; font-weight: bold; font=
+-size: 10pt; border: 1px outset rgb(136, 136, 136); padding: 6px 10px; whit=
+e-space: nowrap; position: absolute; left: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd img { margin-left: 2px; margin-right: 2px; width=
+: 19px; height: 19px; border: none; vertical-align: middle; }
+
+.VIpgJd-ZVi9od-SmfZ-hSRGPd span { text-decoration: underline; margin-left: =
+2px; margin-right: 2px; vertical-align: middle; }
+
+.goog-te-float-top .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-top-wi=
+dth: 0px; }
+
+.goog-te-float-bottom .VIpgJd-ZVi9od-SmfZ-hSRGPd { padding: 2px; border-bot=
+tom-width: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed { text-decoration: none; color: rgb(0, 0, 204)=
+; white-space: nowrap; margin-left: 4px; margin-right: 4px; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration: underline; }
+
+.VIpgJd-ZVi9od-xl07Ob-lTBxed img { margin-left: 2px; margin-right: 2px; }
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed { color: rgb(0, 0, 0); =
+}
+
+.goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed span { text-decoration:=
+ none; }
+
+.VIpgJd-ZVi9od-xl07Ob { background-color: rgb(255, 255, 255); text-decorati=
+on: none; border: 2px solid rgb(195, 217, 255); overflow: hidden scroll; po=
+sition: absolute; left: 0px; top: 0px; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b { padding: 3px; text-decoration: none; }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b, .VIpgJd-ZVi9od-xl07Ob-ibnC6b:link { color: rg=
+b(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:visited { color: rgb(85, 26, 139); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:hover { background: rgb(195, 217, 255); }
+
+.VIpgJd-ZVi9od-xl07Ob-ibnC6b:active { color: rgb(0, 0, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf { background-color: rgb(255, 255, 255); text-decorati=
+on: none; border: 1px solid rgb(107, 144, 218); overflow: hidden; padding: =
+4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-KrhPNb { width: 16px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-hgDUwe { margin: 6px 0px; height: 1px; background-col=
+or: rgb(170, 170, 170); overflow: hidden; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div {=
+ padding: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b .uDEFge { display: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .uDEFge { }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd .fmcmS { padding-left: 4px; padding-rig=
+ht: 4px; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd { text-de=
+coration: none; }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:link div, .V=
+IpgJd-ZVi9od-vH1Gmf-ibnC6b:visited div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b:active=
+ div { color: rgb(0, 0, 204); background: rgb(255, 255, 255); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b:hover div { color: rgb(255, 255, 255); backgro=
+und: rgb(51, 102, 204); }
+
+.VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SM=
+d:link div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:visited div, .VIpgJd-ZVi9od=
+-vH1Gmf-ibnC6b-gk6SMd:hover div, .VIpgJd-ZVi9od-vH1Gmf-ibnC6b-gk6SMd:active=
+ div { color: rgb(0, 0, 0); font-weight: bold; }
+
+.VIpgJd-ZVi9od-l9xktf { background-color: rgb(255, 255, 255); overflow: hid=
+den; padding: 8px; border: none; border-radius: 10px; }
+
+.VIpgJd-ZVi9od-l9xktf-OEVmcd { background-color: rgb(255, 255, 255); border=
+: 1px solid rgb(107, 144, 218); box-shadow: rgb(153, 153, 153) 0px 3px 8px =
+2px; border-radius: 8px; }
+
+.VIpgJd-ZVi9od-l9xktf img { border: none; }
+
+.VIpgJd-ZVi9od-l9xktf-fmcmS { margin-top: 6px; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc { margin-top: 6px; white-space: nowrap; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc * { vertical-align: middle; }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .DUGJie { background-image: url("https://www&g=
+oogle.com/images/zippy_minus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc .TdyTDe { background-image: url("https://www&g=
+oogle.com/images/zippy_plus_sm.gif"); }
+
+.VIpgJd-ZVi9od-l9xktf-VgwJlc span { color: rgb(0, 0, 204); text-decoration:=
+ underline; cursor: pointer; margin: 0px 4px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp { margin: 6px 0px 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form { margin: 0px; }
+
+.VIpgJd-ZVi9od-l9xktf-I9GLp form textarea { margin-bottom: 4px; width: 100%=
+; }
+
+.VIpgJd-ZVi9od-l9xktf-yePe5c { margin: 6px 0px 4px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf { z-index: 1000; position: fixed; transition-d=
+elay: 0.6s; left: -1000px; top: -1000px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc { transition-delay: 0s; left: -14px; to=
+p: -14px; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO { display: flex; -webkit-box-align: center; ali=
+gn-items: center; -webkit-box-pack: center; justify-content: center; width:=
+ 104px; height: 104px; border-radius: 50px; background: url("https://www.gs=
+tatic.com/images/branding/product/2x/translate_24dp.png") 50% 50% no-repeat=
+ rgb(255, 255, 255); transition: all 0.6s ease-in-out 0s; transform: scale(=
+0.4); opacity: 0; }
+
+.VIpgJd-ZVi9od-aZ2wEe-OiiCO-ti6hGc { transform: scale(0.5); opacity: 1; }
+
+.VIpgJd-ZVi9od-aZ2wEe { margin: 2px 0px 0px 2px; animation: 1.4s linear 0s =
+infinite normal none running spinner-rotator; }
+
+@-webkit-keyframes spinner-rotator {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+@keyframes spinner-rotator {=20
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(270deg); }
+}
+
+.VIpgJd-ZVi9od-aZ2wEe-Jt5cK { stroke-dasharray: 187; stroke-dashoffset: 0; =
+stroke: rgb(66, 133, 244); transform-origin: center center; animation: 1.4s=
+ ease-in-out 0s infinite normal none running spinner-dash; }
+
+@-webkit-keyframes spinner-dash {=20
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(450deg); }
+}
+
+@keyframes spinner-dash {=20
+  0% { stroke-dashoffset: 187; }
+  50% { stroke-dashoffset: 46.75; transform: rotate(135deg); }
+  100% { stroke-dashoffset: 187; transform: rotate(450deg); }
+}
+
+.VIpgJd-yAWNEb-L7lbkb html, .VIpgJd-yAWNEb-L7lbkb body, .VIpgJd-yAWNEb-L7lb=
+kb div, .VIpgJd-yAWNEb-L7lbkb span, .VIpgJd-yAWNEb-L7lbkb iframe, .VIpgJd-y=
+AWNEb-L7lbkb h1, .VIpgJd-yAWNEb-L7lbkb h2, .VIpgJd-yAWNEb-L7lbkb h3, .VIpgJ=
+d-yAWNEb-L7lbkb h4, .VIpgJd-yAWNEb-L7lbkb h5, .VIpgJd-yAWNEb-L7lbkb h6, .VI=
+pgJd-yAWNEb-L7lbkb p, .VIpgJd-yAWNEb-L7lbkb a, .VIpgJd-yAWNEb-L7lbkb img, .=
+VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul, .VIpgJd-yAWNEb-L7lbkb li=
+, .VIpgJd-yAWNEb-L7lbkb table, .VIpgJd-yAWNEb-L7lbkb form, .VIpgJd-yAWNEb-L=
+7lbkb tbody, .VIpgJd-yAWNEb-L7lbkb tr, .VIpgJd-yAWNEb-L7lbkb td { margin: 0=
+px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; =
+font-weight: inherit; font-stretch: inherit; font-family: inherit; font-opt=
+ical-sizing: inherit; font-kerning: inherit; font-feature-settings: inherit=
+; font-variation-settings: inherit; font-size: 100%; vertical-align: baseli=
+ne; text-align: left; line-height: normal; }
+
+.VIpgJd-yAWNEb-L7lbkb ol, .VIpgJd-yAWNEb-L7lbkb ul { list-style: none; }
+
+.VIpgJd-yAWNEb-L7lbkb table { border-collapse: collapse; border-spacing: 0p=
+x; }
+
+.VIpgJd-yAWNEb-L7lbkb caption, .VIpgJd-yAWNEb-L7lbkb th, .VIpgJd-yAWNEb-L7l=
+bkb td { text-align: left; font-weight: normal; }
+
+div > .VIpgJd-yAWNEb-L7lbkb { padding: 10px 14px; }
+
+.VIpgJd-yAWNEb-L7lbkb { color: rgb(34, 34, 34); background-color: rgb(255, =
+255, 255); border: 1px solid rgb(238, 238, 238); box-shadow: rgba(0, 0, 0, =
+0.2) 0px 4px 16px; display: none; font-family: arial; font-size: 10pt; widt=
+h: 420px; padding: 12px; position: absolute; z-index: 10000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-nVMfcd-fmcmS, .VIpgJd-yAWNEb-yAWNEb-Vy=
+2Aqc-pbTTYe { clear: both; font-size: 10pt; position: relative; text-align:=
+ justify; width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-r4nke { color: rgb(153, 153, 153); fon=
+t-family: arial, sans-serif; margin: 4px 0px; text-align: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TvD9Pc-LgbsSe { display: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-l4eHX { float: left; margin: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-PLDbbf { display: inline-block;=
+ }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-fw42Ze-Z0Arqf-haAclf { display: none; =
+width: 100%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-H9tDt { margin-top: 20px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-LK5yu { float: left; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-qwU8Me { float: right; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-cGMI2b { min-height: 15px; position: r=
+elative; height: 1%; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-jOfkMb-Ne3sFf { background: rgb(41, 14=
+5, 13); border-radius: 4px; box-shadow: rgb(30, 102, 9) 0px 2px 2px inset; =
+color: white; font-size: 9pt; font-weight: bolder; margin-top: 12px; paddin=
+g: 6px; text-shadow: rgb(30, 102, 9) 1px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-hSRGPd { color: rgb(17, 85, 204=
+); cursor: pointer; font-family: arial; font-size: 11px; margin-right: 15px=
+; text-decoration: none; }
+
+.VIpgJd-yAWNEb-L7lbkb > textarea { font-family: arial; resize: vertical; wi=
+dth: 100%; margin-bottom: 10px; border-radius: 1px; border-width: 1px; bord=
+er-style: solid; border-color: silver rgb(217, 217, 217) rgb(217, 217, 217)=
+; border-image: initial; font-size: 13px; height: auto; overflow-y: auto; p=
+adding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb textarea:focus { box-shadow: rgba(0, 0, 0, 0.3) 0px 1=
+px 2px inset; border: 1px solid rgb(77, 144, 254); outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-Z0Arqf-IbE0S { margin-right: 10px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp { min-height: 25px; verti=
+cal-align: middle; padding-top: 8px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp { margin-bottom: 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input { display: inline-block; min-width: 54px; border: 1px solid rgba(0=
+, 0, 0, 0.1); text-align: center; color: rgb(68, 68, 68); font-size: 11px; =
+font-weight: bold; height: 27px; outline: 0px; padding: 0px 8px; vertical-a=
+lign: middle; line-height: 27px; margin: 0px 16px 0px 0px; box-shadow: rgba=
+(0, 0, 0, 0.1) 0px 1px 2px; border-radius: 2px; transition: all 0.218s ease=
+ 0s; background-color: rgb(245, 245, 245); background-image: -webkit-linear=
+-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241)); user-select: none; =
+cursor: default; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:hover { border: 1px solid rgb(198, 198, 198); color: rgb(34, 34, 3=
+4); transition: all 0s ease 0s; background-color: rgb(248, 248, 248); backg=
+round-image: -webkit-linear-gradient(top, rgb(248, 248, 248), rgb(241, 241,=
+ 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:active { border: 1px solid rgb(198, 198, 198); color: rgb(51, 51, =
+51); background-color: rgb(246, 246, 246); background-image: -webkit-linear=
+-gradient(top, rgb(246, 246, 246), rgb(241, 241, 241)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yA=
+WNEb-Z0Arqf-I9GLp input.AHmuwe .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-=
+I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VIpg=
+Jd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:focus:active { box=
+-shadow: rgba(255, 255, 255, 0.5) 0px 0px 0px 1px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-y=
+AWNEb-Z0Arqf-I9GLp input.AHmuwe { outline: none; border: 1px solid rgb(77, =
+144, 254); z-index: 4 !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input.gk6SMd { background-color: rgb(238, 238, 238); background-image: -=
+webkit-linear-gradient(top, rgb(238, 238, 238), rgb(224, 224, 224)); box-sh=
+adow: rgba(0, 0, 0, 0.1) 0px 1px 2px inset; border: 1px solid rgb(204, 204,=
+ 204); color: rgb(51, 51, 51); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf { color: white; border-color: rgb(48,=
+ 121, 237); background-color: rgb(77, 144, 254); background-image: -webkit-=
+linear-gradient(top, rgb(77, 144, 254), rgb(71, 135, 237)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover .VIpgJd-yAWNEb-L7lbkb .VIpgJd-y=
+AWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-=
+sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAW=
+NEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.AHmuwe .VIpgJd-yAWNEb-L=
+7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd=
+-yAWNEb-Z0Arqf-sFeBqf:active { border-color: rgb(48, 121, 237); background-=
+color: rgb(53, 122, 232); background-image: -webkit-linear-gradient(top, rg=
+b(77, 144, 254), rgb(53, 122, 232)); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:hover { box-shadow: rgb(255, 255, 255=
+) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.1) 0px 1px 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9G=
+Lp input:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-y=
+AWNEb-Z0Arqf-I9GLp input.AHmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5=
+e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:active, .VIpgJd-yAWNEb-L7lbkb .VI=
+pgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input:hover, .VIpgJd-y=
+AWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input =
+.VIpgJd-yAWNEb-Z0Arqf-sFeBqf:focus, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4=
+Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf.A=
+Hmuwe, .VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0A=
+rqf-I9GLp input .VIpgJd-yAWNEb-Z0Arqf-sFeBqf:active, .VIpgJd-yAWNEb-L7lbkb =
+.VIpgJd-yAWNEb-L4Nn5e-I9GLp .VIpgJd-yAWNEb-Z0Arqf-I9GLp input .VIpgJd-yAWNE=
+b-Z0Arqf-sFeBqf:hover { border-color: rgb(48, 121, 237); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-mrxPge { color: rgb(153, 153, 153); fo=
+nt-family: arial, sans-serif; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-W0vJo-fmcmS { color: rgb(153, 1=
+53, 153); font-size: 11px; font-family: arial, sans-serif; margin: 15px 0px=
+ 5px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-u0pjoe-fmcmS { color: rgb(136, =
+0, 0); display: none; font-size: 9pt; }
+
+.VIpgJd-yAWNEb-VIpgJd-fmcmS-sn54Q { background-color: rgb(201, 215, 241); b=
+ox-shadow: rgb(153, 153, 170) 2px 2px 4px; box-sizing: border-box; position=
+: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-xl=
+07Ob { background: rgb(255, 255, 255); border: 1px solid rgb(221, 221, 221)=
+; box-shadow: rgb(153, 153, 170) 0px 2px 4px; min-width: 0px; outline: none=
+; padding: 0px; position: absolute; z-index: 2000; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb { cursor: pointer; padding: 2px 5px 5px; margin-right: 0px; border-sty=
+le: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb:hover { background: rgb(221, 221, 221); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb h1 { font-size: 100%; font-weight: bold; margin: 4px 0px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-xl07Ob .VIpgJd-yAWNEb-VIpgJd-j7=
+LFlb strong { color: rgb(52, 90, 173); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-eKm5Fc-hFsbo { text-align: righ=
+t; position: absolute; right: 0px; left: auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-VIpgJd-j7LFlb-SIsrTd .VIpgJd-yAWNEb-VI=
+pgJd-eKm5Fc-hFsbo { text-align: left; position: absolute; left: 0px; right:=
+ auto; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-fmcmS, .VIpgJd-yAWNEb-L7=
+lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background-color: rgb(241, 234, 0=
+); border-radius: 4px; box-shadow: rgba(0, 0, 0, 0.5) 3px 3px 4px; box-sizi=
+ng: border-box; color: rgb(241, 234, 0); cursor: pointer; margin: -2px -2px=
+ -2px -3px; padding: 2px 2px 2px 3px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { color: rgb(34, 3=
+4, 34); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-Vy2Aqc-pbTTYe { color: white; p=
+osition: absolute !important; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-ppHlrf, .VIpgJd-yAWNEb-L7lbkb .=
+VIpgJd-yAWNEb-TVLw9c-ppHlrf .VIpgJd-yAWNEb-TVLw9c-ppHlrf-sn54Q { background=
+-color: rgb(201, 215, 241); border-radius: 4px 4px 0px 0px; box-shadow: rgb=
+a(0, 0, 0, 0.5) 3px 3px 4px; box-sizing: border-box; cursor: pointer; margi=
+n: -2px -2px -2px -3px; padding: 2px 2px 3px 3px; position: relative; }
+
+.VIpgJd-yAWNEb-L7lbkb span:focus { outline: none; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-TVLw9c-DyVDA { background-color: trans=
+parent; border: 1px solid rgb(77, 144, 254); border-radius: 0px; margin: -2=
+px; padding: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-LzX3ef { border-le=
+ft: 2px solid red; margin-left: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-yAWNEb-TVLw9c-sn54Q-YIAiIb { border-ri=
+ght: 2px solid red; margin-right: -2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf { padding: 2px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS { font-size: 11px;=
+ padding: 2px 2px 3px; margin: 0px; background-color: rgb(255, 255, 255); c=
+olor: rgb(51, 51, 51); border-width: 1px; border-style: solid; border-color=
+: rgb(192, 192, 192) rgb(217, 217, 217) rgb(217, 217, 217); border-image: i=
+nitial; display: inline-block; vertical-align: top; height: 21px; box-sizin=
+g: border-box; border-radius: 1px; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:hover { border-wid=
+th: 1px; border-style: solid; border-color: rgb(160, 160, 160) rgb(185, 185=
+, 185) rgb(185, 185, 185); border-image: initial; box-shadow: rgba(0, 0, 0,=
+ 0.1) 0px 1px 2px inset; }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-fmcmS:focus { box-shadow=
+: rgba(0, 0, 0, 0.3) 0px 1px 2px inset; outline: none; border: 1px solid rg=
+b(77, 144, 254); }
+
+.VIpgJd-yAWNEb-L7lbkb .VIpgJd-yAWNEb-IFdKyd-YPqjbf-sFeBqf { font-size: 11px=
+; padding: 2px 6px 3px; margin: 0px 0px 0px 2px; height: 21px; }
+
+.VIpgJd-yAWNEb-hvhgNd { font-family: "Google Sans", Arial, sans-serif; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c { position: absolu=
+te; top: 10px; left: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-l4eHX-SIsrTd { position: absolu=
+te; top: 10px; right: 14px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c, .VIpgJd-yAWNEb-h=
+vhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd { margin: 16px; padding: 0px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-IuizWc { margin: 0px 0px 0px 36=
+px; padding: 0px; color: rgb(116, 119, 117); font-size: 14px; font-weight: =
+500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-k77Iif-SIsrTd .VIpgJd-yAWNEb-hv=
+hgNd-IuizWc { text-align: right; margin: 0px 36px 0px 0px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-axAV1 { width: auto; padding: 1=
+2px 0px 0px; color: rgb(31, 31, 31); font-size: 16px; text-align: initial; =
+}
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-axAV1 .VIpgJd-yAWNEb-SIsrTd { t=
+ext-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid { border-radius: 0px 0px=
+ 12px 12px; margin: 0px; background: rgb(241, 244, 249); position: relative=
+; min-height: 50px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid .VIpgJd-yAWNEb-SIsrTd { =
+text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od { display: inline=
+-block; width: 77%; padding: 12px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-UTujCb { color: rgb(31, 31, 31)=
+; font-size: 12px; font-weight: 500; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd .VIpgJd-yAWNEb-hvhgNd-UTujCb { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { color: rgb(68, 71, 70)=
+; font-size: 12px; padding-top: 4px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od .VIpgJd-yAWNEb-SI=
+srTd .VIpgJd-yAWNEb-hvhgNd-eO9mKe { text-align: right; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 { position: absolute; top=
+: 10px; right: 5px; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-xgov5 .VIpgJd-yAWNEb-SIsrTd { l=
+eft: 5px; right: auto; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-THI6Vb { fill: rgb(11, 87, 208)=
+; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf { margin: -4px 2px 0px 0=
+px; padding: 2px 0px 0px; width: 48px; height: 48px; border: none; border-r=
+adius: 24px; cursor: pointer; background: none; }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-bgm6sf:hover { background: rgb(=
+232, 235, 236); }
+
+.VIpgJd-yAWNEb-hvhgNd .VIpgJd-yAWNEb-hvhgNd-aXYTce { display: none; }
+
+sentinel { }
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg
+
+<svg xmlns=3D"http://www.w3.org/2000/svg" xmlns:xlink=3D"http://www.w3.org/=
+1999/xlink" height=3D"24" viewBox=3D"0 0 24 24" width=3D"24"><path d=3D"M0 =
+0h24v24H0z" fill=3D"none"/><defs><path d=3D"M21.5 5h-9.17L11 1H2.5C1.68 1 1=
+ 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5h9.17L13 23h8.5c.82 0 1.5-.68 1.5-1.5v-1=
+5c0-.83-.68-1.5-1.5-1.5z" id=3D"a"/></defs><clipPath id=3D"b"><use overflow=
+=3D"visible" xlink:href=3D"#a"/></clipPath><g clip-path=3D"url(#b)"><image =
+height=3D"31" opacity=3D".2" overflow=3D"visible" transform=3D"translate(3 =
+1)" width=3D"29" xlink:href=3D"data:image/png;base64,iVBORw0KGgoAAAANSUhEUg=
+AAAB0AAAAfCAYAAAAbW8YEAAAACXBIWXMAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBB=
+ZG9iZSBJbWFnZVJlYWR5ccllPAAABQBJREFUeNq8V8tu20YUvXdm+LCk RKiMwI1TFEXhVZJd1g=
+W66xekv9DPqPsvXdU/UaDroJskKy+CInCcGpKtFy2SM/f2DEXZia0odtKW AkFJ8zhzzn3S0Ycv=
+ps+79EMDbj3Yfgv4EM+XTN/fEOb3Zg3AXmq7j64D5/e/x/EfzZMnX5jx+LFZ LLyp6yNDOzskYb=
+6RubFdpbdvKUl2Jc+d9PvP5dmzUyH6TVoYXQOq+H5g9vb+cONsO9maLpIyyZPU kZNAppmh9Vpg=
+5kSXwCSVJ5/Vi/r8Tl73y2F9ePidJ3oaga+B4vkUgF+6EW1ndz11gvNdDdL1bDNr yKkCWO16th=
+yUGWIIeae2ZGvn1of5xFExoGF5eHgM4ANZsW032Tf05MjeW+xmNKeedeWAg9tmywPM 6rGYzOAP=
+BSfQ5Ss0Nf4pAmRrSmBP1ehIxQ6DpxF1aXaSH5X0bDcAR1aOxLRPtPdrZrwnd55Sx3gz IMO72O=
+wBq9kmox0RSkHHRNxrRJWFDbQXKpR1xN4eOfx0NqnMdFHulY/rw/1RAE5crEvvffGCvX/E VUoO=
+C3Mm24eaO6TyNZjeB5E+sDLMt2tCqZEW8lcgPSU2x0IhKlAYoTP4xUTueUMvHvJK3ouQ8ffH HP=
+62JpGeg/VSYciqNADbHQxvY5etdr65yhNXlG2B5xjzgWfHJoSeZ5Olbuaq+czQyYSvxal701dJ =
+SWoigRNqXItjORhsC+x74NfDtPQ6aGPkgAUlGROpTKBQR4gbB1x6fjz3/DK8GsoHj/SVG6pJACi=
++ NhQdApsQJFPCeliYKImgeEJmylc3Xzw5yp9xnIMYMkZt9HjVhK/GeHtqZI5+KUVJXtSVQcwcY=
+DPo FI93jhW+DWSjzZrGts0NQSwOZTFoMaMBaly6CTFZG2KXUt3Z1aQzC36rKrFJ0cgUb6aZRnu=
+RwjtI lo7Eq3CLWSya4eJ7a+TN2eudvClbk17ItFepoQLrpyQyxkZTjBYIiwqnXwF/1mXerQivt=
+u+Hohp7 tf7cWJnCTgBleCQ3bBEaPiaCTRXkNqBLu955o2kv+NzIIogDkGlAEfuwL51DYh9z3sd=
+K1y1ALyX2 FxJLK3Fj339NYnO16P4fEl8J9HUSaytxTHFRYqrhnJ60AZU2lNpDNOULaZH1FqBXJ=
+S4LhN8ECeos MgbLWUx3AK+xv4+ZKN6ACxxlZw0xDzdZKj7Z6E1ALyQ+91WNclwgIU6wwRli7xT=
+kzjA8BQCSBxfL +MUhlnGMDMYlfsPuWsdSF4GZa226io1MW4nzPvkQbWgDnIlGYHSCTU+QbOI9B=
+NtTTB7hxmEIh+FT KDJGZoiVpkA6KmNRj90E0duPNmaNxJ29QVh0RxWsOMNRh0JyDIk7LBK1iw6=
+2BV1cLKaXpY2n+HWs GkZidOZEysp3fDK4K3TvK90EisGf6bD/k6CTqDpBZt6EoTWcSXQU5mhX1=
+FvNm/XRiyQiaw0XKmDi EXL9kdV6FMMu9kvpyUDoB3SIB5uYxp2+fSr9P7Na7IOipsUpxZ5BqIS=
+NTw1rFy6bGrKoIjAbS9uu EKoT2NowqiWJ7cqM0KD9lT8X2t+lKz3S2l4Z/e4v9ptXzcFyn9Zd8=
+nlHHcjXaNZsaCvKqlW6dWP2 Ibr7sdE2e68H9sy+TvN5J6nwydLUvtuWfmoLugH4Zg34JzbbHwO=
+/wavG+68VdJPXihuC/zcvUJ+0 0W2ufwQYAGHKK2CFMIrzAAAAAElFTkSuQmCC"/><radialGra=
+dient cx=3D"7.394" cy=3D"5.437" gradientUnits=3D"userSpaceOnUse" id=3D"c" r=
+=3D"23.416"><stop offset=3D"0" stop-color=3D"#EEE"/><stop offset=3D".432" s=
+top-color=3D"#E6E6E6"/><stop offset=3D"1" stop-color=3D"#E1E1E1"/></radialG=
+radient><path d=3D"M13 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1=
+.5H7l6 18z" fill=3D"url(#c)"/></g><path clip-path=3D"url(#b)" d=3D"M18 11v-=
+1h-1v1h-3.75v1h5.32c-.2.49-.6 1.3-1.32 2.14-.51-.6-.86-1.18-1.1-1.64h-1.11c=
+.36.84.9 1.66 1.52 2.38l-2.6 2.58.71.71 2.58-2.58 2.58 2.58.71-.71-2.6-2.58=
+c.74-.86 1.33-1.85 1.68-2.88H21v-1h-3z" fill=3D"#607D8B"/><linearGradient g=
+radientUnits=3D"userSpaceOnUse" id=3D"d" x1=3D"12.333" x2=3D"23" y1=3D"14" =
+y2=3D"14"><stop offset=3D"0" stop-color=3D"#212121" stop-opacity=3D".1"/><s=
+top offset=3D"1" stop-color=3D"#212121" stop-opacity=3D".02"/></linearGradi=
+ent><path clip-path=3D"url(#b)" d=3D"M12.33 5L23 15.67V23H13" fill=3D"url(#=
+d)"/><g clip-path=3D"url(#b)"><image height=3D"8" opacity=3D".1" overflow=
+=3D"visible" transform=3D"translate(10.5 17.5)" width=3D"9" xlink:href=3D"d=
+ata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAJCAYAAAALpr0TAAAACXBIWX=
+MAAAsSAAALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAOFJ=
+REFUeNp0UD1LA0EUnLe7JsJh CiFpLVNYaS3411L7Z/InUpgmqRIRLGxEOEVQsoRcbnecu6AGTB=
+4M72vevjdr+DPDf+Nvs3858q7a Fp4oDOZBJ5dJMCVDzJ2T+LYYpeAyTj39UMNXhA00HABXKy89=
+bY6UlqrFoMHm5QK0a/mbXYxSyyZm eCBTe5Kr68+NGq+Kv4QzoSM8q3ZP8imjXjdEv/6Ysnd+q6=
+a7UN4XFsKYlifbUJXvj3ftytAqM1vJ z6UgGvgiIbN90g8RVddFKZ/pzqX+Y5NDtdonHTI71vgW=
+YADzWmdx/4fpmQAAAABJRU5ErkJggg=3D=3D"/><path d=3D"M17 19l-4 4-1.33-4" fill=
+=3D"#3F51B5"/></g><path clip-path=3D"url(#b)" d=3D"M21.5 5H7l.04.12H21.5c.8=
+2 0 1.5.67 1.5 1.5V6.5c0-.83-.68-1.5-1.5-1.5z" fill=3D"#212121" fill-opacit=
+y=3D".02"/><path clip-path=3D"url(#b)" d=3D"M21.5 22.88H13L11.71 19h-.04L13=
+ 23h8.5c.82 0 1.5-.68 1.5-1.5v-.12c0 .82-.68 1.5-1.5 1.5z" fill=3D"#212121"=
+ fill-opacity=3D".1"/><path clip-path=3D"url(#b)" d=3D"M12.97 22.91L13 23l4=
+-4h-.12" fill=3D"#1A237E" fill-opacity=3D".2"/><path clip-path=3D"url(#b)" =
+d=3D"M11.67 19.12h5.21L17 19h-5.33" fill=3D"#1A237E" fill-opacity=3D".1"/><=
+g clip-path=3D"url(#b)"><image height=3D"22" opacity=3D".2" overflow=3D"vis=
+ible" transform=3D"translate(-.5 -.5)" width=3D"20" xlink:href=3D"data:imag=
+e/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAXCAYAAADk3wSdAAAACXBIWXMAAAsSAA=
+ALEgHS3X78AAAA GXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUpJREFUeNqs=
+lbFOwzAQQO/sQCRc sqAOlRgrMjCVr+Er+IZ+Ax/WTCwVeyVQl9IOQY2Pc2qhNFwcGsdSrHNsP5=
+2fpTPCeUP4X6PQZA2Z Pi41lqXRpCYKtA5tsFBVFdo9penh821ZSWsS112X1hBdPXG44BSyQMaE=
+oHcJ6QJLu+LxrguKQDQB UAuOn3nfLATlqc0psmvuvyQVibfARyaXoQPeh6Hk9Mw4uL2bv3xs31=
++P7UWq5Rd7LsvN8akg5zBP KTPSIgWXN3OCQo6ARkpiCNQd36maegV6DGgjW1lBJFRWMBQaVDAU=
+GlQwAvSvghhop4IYaKeCkaDn CmKhooJYqKhAtao59VV1od3w99BU4EsfcQVXruBuPBMvgJIv1s=
+dmPSVA3HOhLvy/bCC0qDk8rjP9 TtWB36gVv1Hrvjeq792SjokRF/Z7Fz8CDAC8EmWDKVGDLgAA=
+AABJRU5ErkJggg=3D=3D"/><path d=3D"M11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68=
+ 1.5 1.5 1.5H17L11 1z" fill=3D"#4285F4"/></g><path clip-path=3D"url(#b)" d=
+=3D"M2.5 1C1.68 1 1 1.68 1 2.5v.12c0-.82.68-1.5 1.5-1.5H11V1H2.5z" fill=3D"=
+#FFF" fill-opacity=3D".02"/><path clip-path=3D"url(#b)" d=3D"M11 1v.12l5.92=
+ 17.75H2.5c-.82 0-1.5-.67-1.5-1.5v.12c0 .84.68 1.51 1.5 1.51H17L11 1z" fill=
+=3D"#212121" fill-opacity=3D".1"/><g clip-path=3D"url(#b)"><path d=3D"M7.5 =
+10v1.2h1.98c-.08.52-.6 1.51-1.98 1.51-1.2 0-2.17-.99-2.17-2.21S6.3 8.29 7.5=
+ 8.29c.68 0 1.13.29 1.39.54l.95-.92C9.24 7.35 8.44 7 7.5 7 5.57 7 4 8.57 4 =
+10.5S5.57 14 7.5 14c2.02 0 3.36-1.42 3.36-3.42 0-.23-.02-.41-.06-.58H7.5z" =
+fill=3D"#EEE"/><path d=3D"M4 7h7v7H4z" fill=3D"none"/></g><radialGradient c=
+x=3D"1.457" cy=3D"1.42" gradientUnits=3D"userSpaceOnUse" id=3D"e" r=3D"29.7=
+92"><stop offset=3D"0" stop-color=3D"#FFF" stop-opacity=3D".1"/><stop offse=
+t=3D"1" stop-color=3D"#FFF" stop-opacity=3D"0"/></radialGradient><path d=3D=
+"M21.5 5h-9.17L11 1H2.5C1.68 1 1 1.68 1 2.5v15c0 .83.68 1.5 1.5 1.5h9.17L13=
+ 23h8.5c.82 0 1.5-.68 1.5-1.5v-15c0-.83-.68-1.5-1.5-1.5z" fill=3D"url(#e)"/=
+></svg>
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7----
+Content-Type: text/html
+Content-ID: <frame-DB4F4F23DE339F18440090C6528ABB66@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8"></head><body></body></html>
+------MultipartBoundary--f6UcSqDjtLRcW9Z5lM1GiOTVXKYnyCVZnXPDEI3kk7------

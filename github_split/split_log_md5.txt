@@ -1,0 +1,1 @@
+b624d2fbe680fa364f73c5f5ce1a5bcf ./../vscode_clang-format/bin/clang-tidy
