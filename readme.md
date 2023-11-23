@@ -34,21 +34,39 @@ clang-format -style=llvm -dump-config > .clang-format		//通过命令生成最�
 ```
 .
 ├── docs
-│   └── ClangFormat 指令说明文档.mhtml				//clang-format指令说明文档
+│   ├── Angular提交信息规范.mhtml
+│   ├── ClangFormat指令说明.mhtml
+│   └── Clang格式样式选项文档.mhtml
 ├── readme.md
-├── vscode
-│   ├── linux
-│   │   └── code_1.84.2-1699528352_amd64.deb			//vscode安装包
-│   └── windows
-│       └── VSCodeUserSetup-x64-1.84.2.exe			//vscode安装包
-└── vscode_clang-format
-    ├── bin
-    │   ├── clang-format						
-    │   ├── clang-format.exe					
-    │   ├── clang-tidy
-    │   └── clang-tidy.exe
-    └── config
-        └── .clang-format					//vscode使用代码风格格式化配置文件，用户拷贝到项目
+└── spec
+    ├── 01.git_tools
+    │   └── readme.md
+    ├── 02.ide_tools
+    │   ├── shortcut_key
+    │   │   ├── keyboard-shortcuts-linux.pdf
+    │   │   └── keyboard-shortcuts-windows.pdf
+    │   ├── vscode
+    │   │   ├── linux
+    │   │   │   └── code_1.84.2-1699528352_amd64.deb
+    │   │   └── windows
+    │   │       └── VSCodeUserSetup-x64-1.84.2.exe
+    │   └── vscode_clang-format
+    │       ├── bin
+    │       │   ├── clang-format
+    │       │   └── clang-format.exe
+    │       └── config
+    ├── 03.repo_tools
+    │   └── readme.md
+    ├── 04.commit_tools
+    │   └── readme.md
+    ├── 05.doxygen_tools
+    │   ├── Doxyfile
+    │   └── Doxyfile_Demo.h
+    └── 06.code_spec_files
+        ├── aithinker
+        └── huawei
+            └── 华为技术有限公司C语言编程规范.pdf
+
 
 
 ```
