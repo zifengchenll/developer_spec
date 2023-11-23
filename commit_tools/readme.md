@@ -1,12 +1,11 @@
 ### 工具安装
 
 ```
-$ sudo apt install npm
-$ sudo npm install -g commitizen	//全局安装
+$ sudo apt install npm && sudo npm install -g n && sudo n lts && sudo n prune
 ```
 
 ```
-$ npm init							//在项目目录下执行（Enter）
+$ sudo npm install -g commitizen	//全局安装
 $ commitizen init cz-conventional-changelog --save-dev --save-exact	//在项目目录下执行
 ```
 
@@ -14,12 +13,6 @@ $ commitizen init cz-conventional-changelog --save-dev --save-exact	//在项目�
 $ git add -A	//添加需要提交的文件
 $ git cz		//这个指令代替传统的(git commit)，如果中途退出，（ctrl+z）按两次
 ```
-
-```
-$ sudo npm install -g n && sudo n stable	//如果报错，则尝试更新npm、node软件版本
-```
-
-
 
 ### 字段说明
 
