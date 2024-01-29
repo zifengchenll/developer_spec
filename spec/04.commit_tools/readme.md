@@ -4,19 +4,15 @@
 $ sudo apt install npm && sudo npm install -g n && sudo n lts && sudo n prune
 ```
 
-```
-英文版本：
-$ sudo npm install -g commitizen	//全局安装
-$ commitizen init cz-conventional-changelog --save-dev --save-exact	//在项目目录下执行
+```shell
+$ npm install -g cz-git commitizen
 
-中文版本：
-$ sudo npm i commitizen cz-emoji-chinese -g
-$ echo '{ "path": "cz-emoji-chinese" }' > ~/.czrc
+$ echo '{ "path": "cz-git", "$schema": "https://cdn.jsdelivr.net/gh/Zhengqbbb/cz-git@1.8.0/docs/public/schema/cz-git.json", "useEmoji": true }' > ~/.czrc
 ```
 
 ```
 $ git add -A	//添加需要提交的文件
-$ git cz		//这个指令代替传统的(git commit)，如果中途退出，（ctrl+z）按两次
+$ git cz		//这个指令代替传统的(git commit)，如果中途退出，（ctrl+c）按两次
 ```
 
 ### 字段说明
