@@ -5,7 +5,7 @@ $ sudo apt install npm && sudo npm install -g n && sudo n lts && sudo n prune
 ```
 
 ```shell
-$ npm install -g cz-git commitizen
+$ sudo npm install -g cz-git commitizen
 
 $ echo '{ "path": "cz-git", "$schema": "https://cdn.jsdelivr.net/gh/Zhengqbbb/cz-git@1.8.0/docs/public/schema/cz-git.json", "useEmoji": true }' > ~/.czrc
 ```
